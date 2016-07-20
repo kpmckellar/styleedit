@@ -45,8 +45,15 @@ html,
 	overflow: hidden;
 	z-index: 2;
 }
+/* Footer fixed on homepage */
+.site-footer {
+	position: fixed;
+}
 
-@media only screen and (min-width: 480px) {	
+@media only screen and (min-width: 480px) {
+	.home {
+		padding-bottom: 0;
+	}
 	#homeSlider #logo a {
 		top: 50%;
 		left: 45px;
@@ -55,6 +62,10 @@ html,
 		margin-top: -67px;
 		background-image: url(../img/logo-desktop.png);
 		background-size: inherit;
+	}
+	/* Unfix footer after 480 */
+	.site-footer {
+		position: static;
 	}
 }
 @media only screen and (min-width: 1024px) {
