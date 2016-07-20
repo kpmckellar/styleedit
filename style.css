@@ -134,3 +134,8 @@ a{color:#4169e1}a:visited{color:purple}a:active,a:focus,a:hover{color:#191970}a:
 /*--------------------------------------------------------------
 ## Theme Styles
 --------------------------------------------------------------*/
+
+body {
+	font-family:'DIN Next W01 Regular';
+	font-size: 16px;
+}
