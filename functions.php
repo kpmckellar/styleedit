@@ -140,6 +140,23 @@ require get_template_directory() . '/inc/customizer.php';
 require get_template_directory() . '/inc/jetpack.php';
 
 /**
+ * Define CONSTANTS for settings page
+ */
+if ( ! defined( 'CUSTOM_LOCALE' ) )
+	define( 'CUSTOM_LOCALE', '' );
+	
+if ( ! defined( 'CUSTOM_DIR' ) )
+	define( 'CUSTOM_DIR', get_template_directory().'/inc/settings-panel' );
+
+if ( ! defined( 'CUSTOM_URL' ) )
+	define( 'CUSTOM_URL', get_template_directory_uri().'/inc/settings-panel' );
+
+/**
+ * Load Settings Page
+ */
+require_once get_template_directory() . '/inc/settings-panel/admin-options.php';
+
+/**
  * Load Custom Meta Box
  */
 require_once get_template_directory() . '/inc/metaboxes/meta_box.php';
