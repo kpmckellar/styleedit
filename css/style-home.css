@@ -46,10 +46,7 @@ html,
 	z-index: 2;
 }
 
-@media only screen and (min-width: 481px) {
-	.home {
-		padding-top: 0;
-	}
+@media only screen and (min-width: 480px) {	
 	#homeSlider #logo a {
 		top: 50%;
 		left: 45px;
@@ -58,5 +55,10 @@ html,
 		margin-top: -67px;
 		background-image: url(../img/logo-desktop.png);
 		background-size: inherit;
+	}
+}
+@media only screen and (min-width: 1024px) {
+	.home {
+		padding-top: 0;
 	}
 }
