@@ -260,9 +260,10 @@ function custom_meta_box_field( $field, $meta = null, $repeatable = null ) {
 					<span class="meta_box_default_image" style="display:none">' . $image . '</span>';
 			if ( $meta ) {
 				$image = wp_get_attachment_image_src( intval( $meta ), 'medium' );
+				$image = $image[0];
 			}
 			echo '<input name="'.$name.'" type="hidden" class="meta_box_upload_image" value="' . intval( $meta ) . '" style="width:'.$width.';" />
-	      	     <img src="' . esc_attr( $image[0] ) . '" class="meta_box_preview_image" alt="'.$image->post_title.'" style="width:150px;" /><br/>
+	      	     <img src="' . esc_attr( $image ) . '" class="meta_box_preview_image" alt="'.$image->post_title.'" style="width:150px;" /><br/>
 	      		 <a href="#" class="meta_box_upload_image_button button" rel="' . get_the_ID() . '">Choose Image</a>
 	      		 <small><a href="#" class="meta_box_clear_image_button">Remove Image</a></small>
 	      	   </div>' . $desc;

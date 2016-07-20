@@ -31,19 +31,19 @@ function post_homeSlider() {
     // Register meta fields for slider
     function post_slider_meta($current_screen){
 		if ( 'slider' == $current_screen->post_type && 'post' == $current_screen->base ) {
-			$prefix = 'hero_';			
+			$prefix = 'slide_';			
 			$fields = array(				
 				array(
-				    'label' => 'Slide Link URL',
-				    'desc'  => 'The url that the slide will take the user to once clicked. Example: http://www.google.com',
-				    'id'    => $prefix.'url',			
-				    'type'  => 'text'
+				    'label' => 'Slide Tablet Image',
+				    'desc'  => 'The image that will be displayed on tablet devices.',
+				    'id'    => $prefix.'tablet_img',			
+				    'type'  => 'image'
 				),
 				array(
-				    'label' => 'Open in Tab',
-				    'desc'  => 'Check to have the slide link open in a new browser tab.',
-				    'id'    => $prefix.'tab',
-				    'type'  => 'checkbox'
+				    'label' => 'Slide Mobile Image',
+				    'desc'  => 'The image tht will be displayed on mobile devices.',
+				    'id'    => $prefix.'mobile_img',
+				    'type'  => 'image'
 				)
 			);
 			$slider_box = new custom_add_meta_box( 'slider_box', 'Slide Options', $fields, 'slider', true );

@@ -21,12 +21,34 @@
 			if ( $queue_slider->have_posts() ) :
 				while ( $queue_slider->have_posts() ) : $queue_slider->the_post(); 
 					$id = get_the_ID();
-					$fullSize_img = wp_get_attachment_image_src( get_post_thumbnail_id($id), 'full' );
-					$fullSize_imgSrc = $fullSize_img[0]
+					// desktop image
+					$desktop_img = wp_get_attachment_image_src( get_post_thumbnail_id($id), 'full' );
+					$desktop_imgSrc = $desktop_img[0];
+					// tablet image
+					$tablet_img = wp_get_attachment_image_src( get_post_meta($id, 'slide_tablet_img', true), 'full' );
+					$tablet_imgSrc = $tablet_img[0];
+					// mobile image
+					$mobile_img = wp_get_attachment_image_src( get_post_meta($id, 'slide_mobile_img', true), 'full' );
+					$mobile_imgSrc = $mobile_img[0];
 
-		?>
+		?>			
+			<li class="slide slide<?php echo $id; ?>">
 
-			<li class="slide" style="background-image: url(<?php echo $fullSize_imgSrc; ?>);">
+				<style type="text/css" media="screen">
+					.slide<?php echo $id; ?> {
+						background-image: url(<?php echo $mobile_imgSrc; ?>);
+					}
+					@media only screen and (min-width: 481px) {
+						.slide<?php echo $id; ?> {
+							background-image: url(<?php echo $tablet_imgSrc; ?>);
+						}	
+					}
+					@media only screen and (min-width: 1025px) {
+						.slide<?php echo $id; ?> {
+							background-image: url(<?php echo $desktop_imgSrc; ?>);
+						}	
+					}
+				</style>	
 			
 				<div class="text">
 					<?php the_content(); ?>	
