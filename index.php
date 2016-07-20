@@ -11,13 +11,39 @@
 
 	<section id="homeSlider">
 		
-		<div class="slide">
-		
-			<div class="text">
-				
-			</div>
+		<ul>
 
-		</div>
+		<?php
+
+			$slider_arguments = array( 'post_type' => 'slider', 'orderby' => 'date', 'order' => 'DESC', 'posts_per_page' => -1 );
+			$queue_slider = new WP_Query( $slider_arguments );
+			
+			if ( $queue_slider->have_posts() ) :
+				while ( $queue_slider->have_posts() ) : $queue_slider->the_post(); 
+					$id = get_the_ID();
+					$fullSize_img = wp_get_attachment_image_src( get_post_thumbnail_id($id), 'full' );
+					$fullSize_imgSrc = $fullSize_img[0]
+
+		?>
+
+			<li class="slide" style="background-image: url(<?php echo $fullSize_imgSrc; ?>);">
+			
+				<div class="text">
+					<?php the_content(); ?>	
+				</div>
+
+			</li>
+
+		<?php 
+		
+				endwhile;
+			endif; 
+			
+			wp_reset_postdata();
+
+		?>	 
+			
+		</ul>
 
 		<div id="logo">
 			<h1><a href="<?php echo esc_url( home_url( '/' ) ); ?>">Style Edit</a></h1>

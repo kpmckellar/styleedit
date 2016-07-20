@@ -1,2 +1,27 @@
-// Homepage styles
+/* Homepage styles */
 
+html,
+.home,
+#page,
+#content,
+#homeSlider,
+#homeSlider ul,
+#homeSlider .slide {
+	height: 100%;
+}
+.home {
+	padding-top: 57px;
+	padding-bottom: 190px;
+}
+#homeSlider {
+	background-color: #000;
+}
+#homeSlider ul {
+	margin: 0;
+	padding: 0;
+}
+#homeSlider .slide {
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+}
