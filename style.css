@@ -67,6 +67,15 @@ button,input[type=button],input[type=reset],input[type=submit]{border:1px solid;
 # Navigation
 --------------------------------------------------------------*/
 /*--------------------------------------------------------------
+# Footer
+--------------------------------------------------------------*/
+.site-footer {
+	height: 190px;
+	background: #f00;
+	text-align: center;
+}
+
+/*--------------------------------------------------------------
 ## Links
 --------------------------------------------------------------*/
 a{color:#4169e1}a:visited{color:purple}a:active,a:focus,a:hover{color:#191970}a:focus{outline:dotted thin}a:active,a:hover{outline:0}
