@@ -35,7 +35,7 @@ function _customAdminOptions(){
 		),
 		array(
 			'desc'  => ' The Instagram url.',
-		 	'id'	=> $prefix.'instagram_a',
+		 	'id'	=> $prefix.'instagram_url',
 		 	'type'	=> 'text',
 		 	'label' => __( 'Instagram URL', CUSTOM_LOCALE )
 		),
