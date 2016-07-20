@@ -1,56 +1,37 @@
 <?php
-/**
- * The main template file.
- *
- * This is the most generic template file in a WordPress theme
- * and one of the two required files for a theme (the other being style.css).
- * It is used to display a page when nothing more specific matches a query.
- * E.g., it puts together the home page when no home.php file exists.
- *
- * @link https://codex.wordpress.org/Template_Hierarchy
- *
- * @package styleedit
- */
 
-get_header(); ?>
+	get_header(); 
 
-	<div id="primary" class="content-area">
-		<main id="main" class="site-main" role="main">
+?>
 
-		<?php
-		if ( have_posts() ) :
+	<!-- Homepage slider START -->
 
-			if ( is_home() && ! is_front_page() ) : ?>
-				<header>
-					<h1 class="page-title screen-reader-text"><?php single_post_title(); ?></h1>
-				</header>
+	<!-- Homepage styles -->
+	<link href="<?php bloginfo('template_directory'); ?>/css/style-home.css" rel="stylesheet" type="text/css">
 
-			<?php
-			endif;
+	<section id="homeSlider">
+		
+		<div class="slide">
+		
+			<div class="text">
+				
+			</div>
 
-			/* Start the Loop */
-			while ( have_posts() ) : the_post();
+		</div>
 
-				/*
-				 * Include the Post-Format-specific template for the content.
-				 * If you want to override this in a child theme, then include a file
-				 * called content-___.php (where ___ is the Post Format name) and that will be used instead.
-				 */
-				get_template_part( 'template-parts/content', get_post_format() );
+		<div id="logo">
+			<h1><a href="<?php echo esc_url( home_url( '/' ) ); ?>">Style Edit</a></h1>
+		</div>
 
-			endwhile;
+	</section>
 
-			the_posts_navigation();
+	<!-- Owl Carousel -->
+	<link href="<?php bloginfo('template_directory'); ?>/js/owl-carousel/owl.carousel.css" rel="stylesheet" type="text/css">
+	<link href="<?php bloginfo('template_directory'); ?>/js/owl-carousel/owl.theme.css" rel="stylesheet" type="text/css">
+	<script src="<?php bloginfo('template_directory'); ?>/js/owl-carousel/owl.carousel.min.js" type="text/javascript"></script>
 
-		else :
-
-			get_template_part( 'template-parts/content', 'none' );
-
-		endif; ?>
-
-		</main><!-- #main -->
-	</div><!-- #primary -->
+	<!-- Homepage slider END -->
 
 <?php
-get_sidebar();
-get_footer();
+
+	get_footer();
