@@ -138,3 +138,13 @@ require get_template_directory() . '/inc/customizer.php';
  * Load Jetpack compatibility file.
  */
 require get_template_directory() . '/inc/jetpack.php';
+
+/**
+ * Load Custom Meta Box
+ */
+require_once get_template_directory() . '/inc/metaboxes/meta_box.php';
+
+/**
+ * Load Post Types.
+ */
+require_once get_template_directory() . '/inc/post-homeSlider.php';
