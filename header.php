@@ -17,6 +17,9 @@
 <link rel="profile" href="http://gmpg.org/xfn/11">
 <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
 
+<!-- jQuery! -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+
 <!-- Fonts.com fonts incluide -->
 <script type="text/javascript" src="//fast.fonts.net/jsapi/f57bee99-b897-470d-99d0-b25cbf760386.js"></script>
 
