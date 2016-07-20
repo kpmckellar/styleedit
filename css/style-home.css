@@ -26,6 +26,7 @@ html,
 #homeSlider ul {
 	margin: 0;
 	padding: 0;
+	list-style: none;
 }
 #homeSlider .slide {
 	background-repeat: no-repeat;
