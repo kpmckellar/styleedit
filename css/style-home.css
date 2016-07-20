@@ -9,11 +9,18 @@ html,
 #homeSlider .slide {
 	height: 100%;
 }
+.owl-stage-outer,
+.owl-stage,
+.owl-item {
+	height: 100%;
+}
 .home {
 	padding-top: 57px;
 	padding-bottom: 190px;
 }
 #homeSlider {
+	position: relative;
+	overflow: hidden;
 	background-color: #000;
 }
 #homeSlider ul {
@@ -24,4 +31,16 @@ html,
 	background-repeat: no-repeat;
 	background-position: center;
 	background-size: cover;
+}
+#homeSlider #logo a {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: url(../img/transparent-logo-mobile.png) center center no-repeat;
+	background-size: auto 100%;
+	text-indent: -999em;
+	overflow: hidden;
+	z-index: 2;
 }
