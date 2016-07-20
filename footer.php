@@ -11,16 +11,17 @@
 
 ?>
 
-	</div><!-- #content -->
+	<!-- removed content div -->
 
 	<footer id="colophon" class="site-footer" role="contentinfo">
 		<div class="site-info">
 
 			<div class="social">
 			<!-- <?php wp_nav_menu( array( 'menu' => 'social', 'theme_location' => 'primary', 'menu_id' => 'primary-menu' ) ); ?> -->
+			
+			<?php $settings = get_option('custom_options'); ?>
 
-
-				<a class="social_icon" href=""><img  src="<?php bloginfo('template_directory'); ?>/img/twitter.png" /></a><a class="social_icon" href=""><img  src="<?php bloginfo('template_directory'); ?>/img/instagram.png" /></a><a class="social_icon" href=""><img  src="<?php bloginfo('template_directory'); ?>/img/facebook.png" /></a><a class="social_icon" href=""><img  src="<?php bloginfo('template_directory'); ?>/img/youtube.png" /></a>
+				<a class="social_icon" href="<?php echo $settings['custom_twitter_url']; ?>"><img  src="<?php bloginfo('template_directory'); ?>/img/twitter.png" /></a><a class="social_icon" href="<?php echo $settings['custom_instagram_url']; ?>"><img  src="<?php bloginfo('template_directory'); ?>/img/instagram.png" /></a><a class="social_icon" href="<?php echo $settings['custom_facebook_url']; ?>"><img  src="<?php bloginfo('template_directory'); ?>/img/facebook.png" /></a><a class="social_icon" href="<?php echo $settings['custom_youtube_url']; ?>"><img  src="<?php bloginfo('template_directory'); ?>/img/youtube.png" /></a>
 			</div>
 
 			<div class="">
