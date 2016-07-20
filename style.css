@@ -64,18 +64,6 @@ html{box-sizing:border-box}*,:after,:before{box-sizing:inherit}body{background:#
 button,input[type=button],input[type=reset],input[type=submit]{border:1px solid;border-color:#ccc #ccc #bbb;border-radius:3px;background:#e6e6e6;box-shadow:inset 0 1px 0 rgba(255,255,255,.5),inset 0 15px 17px rgba(255,255,255,.5),inset 0 -5px 12px rgba(0,0,0,.05);color:rgba(0,0,0,.8);font-size:12px;font-size:.75rem;line-height:1;padding:.6em 1em .4em;text-shadow:0 1px 0 rgba(255,255,255,.8)}button:hover,input[type=button]:hover,input[type=reset]:hover,input[type=submit]:hover{border-color:#ccc #bbb #aaa;box-shadow:inset 0 1px 0 rgba(255,255,255,.8),inset 0 15px 17px rgba(255,255,255,.8),inset 0 -5px 12px rgba(0,0,0,.02)}button:active,button:focus,input[type=button]:active,input[type=button]:focus,input[type=reset]:active,input[type=reset]:focus,input[type=submit]:active,input[type=submit]:focus{border-color:#aaa #bbb #bbb;box-shadow:inset 0 -1px 0 rgba(255,255,255,.5),inset 0 2px 5px rgba(0,0,0,.15)}input[type=range],input[type=date],input[type=month],input[type=week],input[type=time],input[type=datetime],input[type=datetime-local],input[type=color],input[type=text],input[type=email],input[type=url],input[type=password],input[type=search],input[type=number],input[type=tel],textarea{color:#666;border:1px solid #ccc;border-radius:3px;padding:3px}select{border:1px solid #ccc}input[type=range]:focus,input[type=date]:focus,input[type=month]:focus,input[type=week]:focus,input[type=time]:focus,input[type=datetime]:focus,input[type=datetime-local]:focus,input[type=color]:focus,input[type=text]:focus,input[type=email]:focus,input[type=url]:focus,input[type=password]:focus,input[type=search]:focus,input[type=number]:focus,input[type=tel]:focus,textarea:focus{color:#111}textarea{width:100%}
 
 /*--------------------------------------------------------------
-# Navigation
---------------------------------------------------------------*/
-/*--------------------------------------------------------------
-# Footer
---------------------------------------------------------------*/
-.site-footer {
-	height: 190px;
-	background: #f00;
-	text-align: center;
-}
-
-/*--------------------------------------------------------------
 ## Links
 --------------------------------------------------------------*/
 a{color:#4169e1}a:visited{color:purple}a:active,a:focus,a:hover{color:#191970}a:focus{outline:dotted thin}a:active,a:hover{outline:0}
@@ -141,10 +129,50 @@ a{color:#4169e1}a:visited{color:purple}a:active,a:focus,a:hover{color:#191970}a:
 .gallery{margin-bottom:1.5em}.gallery-item{display:inline-block;text-align:center;vertical-align:top;width:100%}.gallery-columns-2 .gallery-item{max-width:50%}.gallery-columns-3 .gallery-item{max-width:33.33%}.gallery-columns-4 .gallery-item{max-width:25%}.gallery-columns-5 .gallery-item{max-width:20%}.gallery-columns-6 .gallery-item{max-width:16.66%}.gallery-columns-7 .gallery-item{max-width:14.28%}.gallery-columns-8 .gallery-item{max-width:12.5%}.gallery-columns-9 .gallery-item{max-width:11.11%}.gallery-caption{display:block}
 
 /*--------------------------------------------------------------
+# Navigation
+--------------------------------------------------------------*/
+/*--------------------------------------------------------------
+# Footer
+--------------------------------------------------------------*/
+.site-footer {
+	height: 190px;
+	text-align: center;
+	position: fixed;
+	bottom: 0;
+	width: 100%;
+	padding-top: 60px;
+}
+
+.social {
+	margin-bottom: 8px;
+}
+
+.social_icon {
+	margin: 0 30px 0 0;
+}
+
+.social_icon:last-of-type {
+	margin-right: 0;
+}
+
+.site-footer p {
+	margin: 0
+}
+
+.copyright {
+	font-size: 12px;
+	color: #807f7f;
+	font-family:'Helvetica LT W01 Roman';
+}
+
+/*--------------------------------------------------------------
 ## Theme Styles
 --------------------------------------------------------------*/
 
 body {
+	color: #231f20;
 	font-family:'DIN Next W01 Regular';
 	font-size: 16px;
+	-webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
 }
