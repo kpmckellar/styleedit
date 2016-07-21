@@ -138,18 +138,36 @@ we did this because the desktop version is simpler and we're moving
 towards complexity
 ------------------------------------------------------------- */
 .navigation {
+	color: #fff;
 	position: absolute;
 	z-index: 100;
 	width: 100%;
+	line-height: 1;
+}
+
+.navigation h1 {
+	position: absolute;
+    top: -9999px;
+    left: -9999px;
+	line-height: 1;
+	margin: 0;
+	padding: 0;
+	font-size: 24px;
+	text-transform: uppercase;
+	font-weight: normal;
+}
+
+.menu-btn {
+	position: absolute;
+    top: -9999px;
+    right: -9999px;
 }
 
 .navigation {
 	width: 100%;
 }
 
-.main_navigation ul {
-	line-height: 1;
-	color: #fff;
+.menu {
 	font-size: 14px;
 	margin: 0 auto;
 }
@@ -174,6 +192,75 @@ towards complexity
 	color: #fff;
 	text-transform: uppercase;
 	text-decoration: none;
+	padding-bottom: 3px;
+}
+
+#primary-menu .menu-item a:hover {
+	border-bottom: 1px solid #fff;
+}
+
+
+
+
+@media only screen and (max-width: 768px) {
+	.navigation {
+		position: fixed;
+		top: 0;
+		height: 57px;
+		background: #2c2c2c;
+	}
+	.main_navigation {
+		display: none;
+		margin-top: 57px;
+	}
+
+	.menu-main-menu-container {
+		height: 100vh;
+		background: rgba(255, 255, 255, 0.9);
+	}
+
+	.menu {
+		font-size: 30px;
+	}
+
+	#primary-menu .menu-item:first-of-type {
+		padding-top: 50px;
+	}
+
+	#primary-menu .menu-item {
+		width: 100%;
+		padding-bottom: 50px;
+		margin: 0;
+	}
+
+	#primary-menu .menu-item a {
+		color: #000;
+	}
+
+	#primary-menu .menu-item a:hover {
+		border-bottom: none;
+	}
+
+	#primary-menu .menu-item a:active {
+		border-bottom: 2px solid #000;
+	}
+
+	.navigation h1 {
+
+		top: 17px;
+		left: 20px;
+	}
+
+	.menu-btn {
+		top: 17px;
+		right: 20px;
+		z-index: 100;
+		color: #fff;
+	}
+
+	.expand {
+		display: block !important; 
+	}
 }
 
 

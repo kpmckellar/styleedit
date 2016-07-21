@@ -21,22 +21,36 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
 
 <!-- Fonts.com fonts incluide -->
-<script type="text/javascript" src="//fast.fonts.net/jsapi/f57bee99-b897-470d-99d0-b25cbf760386.js"></script>
+<link type="text/css" rel="stylesheet" href="//fast.fonts.net/cssapi/f57bee99-b897-470d-99d0-b25cbf760386.css"/>
 
 <?php wp_head(); ?>
+
+
+
+
+
+<script type="text/javascript">
+	jQuery(function($){
+	     $( '.menu-btn' ).click(function(){
+	     	$('.main_navigation').toggleClass('expand')
+	     })
+	})
+</script>
+
+
 </head>
 
 <body <?php body_class(); ?>>
 <div id="page" class="site">
-	<a class="skip-link screen-reader-text" href="#content"><?php esc_html_e( 'Skip to content', 'styleedit' ); ?></a>
+	
 
 	<header class="navigation">
+		<h1><?php bloginfo('name'); ?></h1><img src="<?php bloginfo('template_directory'); ?>/img/menu.png" class="menu-btn" id="menu-btn" />
 
 		<nav class="main_navigation">
-		
 			<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu' ) ); ?>
 		</nav>
 		
 	</header><!-- #masthead -->
 
-	<!-- <div id="content" class="site-content"> -->
+	<div id="content" class="site-content">
