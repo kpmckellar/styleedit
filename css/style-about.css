@@ -1,0 +1,68 @@
+/* About page styles */
+
+#static {
+	padding-top: 57px;
+}
+#static .billboard {
+	position: relative;
+	height: 350px;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-color: #000;
+	background-size: cover;
+}
+#static #logo h1 {
+	margin: 0;
+}
+#static #logo a {
+	position: absolute;
+	text-indent: -999em;
+	overflow: hidden;
+	z-index: 2;
+}
+#static .copy {
+	padding-top: 48px;
+	padding-left: 40px;
+	padding-right: 40px;
+}
+#static .copy .heading {
+	margin-top: 0;
+	margin-bottom: 32px;
+	font-weight: normal;
+}
+#static .copy p {
+	margin-top: 0;
+	margin-bottom: 32px;
+}
+#static .copy p:last-child {
+	margin-bottom: 0;
+}
+@media only screen and (min-width: 480px) {
+	#static {
+		padding-top: 0;
+	}
+	#static .billboard {
+		height: 543px;
+	}
+	#static #logo a {
+		top: 50%;
+		left: 45px;
+		width: 93px;
+		height: 134px;
+		margin-top: -67px;
+		background-image: url(../img/logo-desktop.png);
+		background-size: inherit;
+	}
+	#static .copy {
+		max-width: 1000px;
+		margin: 0 auto;		
+	}
+	#static .copy .columns {
+		-webkit-column-count: 2; /* Chrome, Safari, Opera */
+	    -moz-column-count: 2; /* Firefox */
+	    column-count: 2;
+	    -webkit-column-gap: 50px; /* Chrome, Safari, Opera */
+	    -moz-column-gap: 50px; /* Firefox */
+	    column-gap: 50px;
+	}
+}
