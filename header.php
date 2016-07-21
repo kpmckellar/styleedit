@@ -33,6 +33,7 @@
 	jQuery(function($){
 	     $( '.menu-btn' ).click(function(){
 	     	$('.main_navigation').toggleClass('expand')
+	     	$('.menu-btn').toggleClass('close_icon')
 	     })
 	})
 </script>
@@ -45,7 +46,8 @@
 	
 
 	<header class="navigation">
-		<h1><a href="<?php echo get_home_url() ?>"><?php bloginfo('name'); ?></a></h1><img src="<?php bloginfo('template_directory'); ?>/img/menu.png" class="menu-btn" id="menu-btn" />
+		<h1><a href="<?php echo get_home_url() ?>"><?php bloginfo('name'); ?></a></h1>
+		<div class="menu-btn" id="menu-btn" /></div>
 
 		<nav class="main_navigation">
 			<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu' ) ); ?>
