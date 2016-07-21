@@ -145,6 +145,13 @@ towards complexity
 	line-height: 1;
 }
 
+.navigation a {
+	line-height: 1;
+	color: #fff;
+	text-transform: uppercase;
+	text-decoration: none;
+}
+
 .navigation h1 {
 	position: absolute;
     top: -9999px;
@@ -188,10 +195,6 @@ towards complexity
 }
 
 #primary-menu .menu-item a {
-	line-height: 1;
-	color: #fff;
-	text-transform: uppercase;
-	text-decoration: none;
 	padding-bottom: 3px;
 }
 

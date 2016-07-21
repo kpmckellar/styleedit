@@ -45,7 +45,7 @@
 	
 
 	<header class="navigation">
-		<h1><?php bloginfo('name'); ?></h1><img src="<?php bloginfo('template_directory'); ?>/img/menu.png" class="menu-btn" id="menu-btn" />
+		<h1><a href="<?php echo get_home_url() ?>"><?php bloginfo('name'); ?></a></h1><img src="<?php bloginfo('template_directory'); ?>/img/menu.png" class="menu-btn" id="menu-btn" />
 
 		<nav class="main_navigation">
 			<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu' ) ); ?>
