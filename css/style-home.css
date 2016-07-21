@@ -75,6 +75,9 @@ html,
 	.home {
 		padding-top: 0;
 	}
+}
+
+@media only screen and (min-width: 1024px) {
 	#homeSlider {
 		max-height: 768px;
 	}
