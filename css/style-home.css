@@ -72,4 +72,7 @@ html,
 	.home {
 		padding-top: 0;
 	}
+	#homeSlider {
+		max-height: 768px;
+	}
 }
