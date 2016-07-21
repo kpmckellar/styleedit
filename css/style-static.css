@@ -90,7 +90,7 @@
 	}	
 	#static .copy {
 		max-width: 960px;
-		margin: 0 auto;
+		margin: 0 auto;		
 		-webkit-column-count: 2; /* Chrome, Safari, Opera */
 	    -moz-column-count: 2; /* Firefox */
 	    column-count: 2;
@@ -98,12 +98,15 @@
 	    -moz-column-gap: 50px; /* Firefox */
 	    column-gap: 50px;
 	}
+	#static .copy p {
+		text-align: left;
+	}
 	#static.contact .copy {
 		max-width: 560px;
 		-webkit-column-count: inherit; /* Chrome, Safari, Opera */
 	    -moz-column-count: inherit; /* Firefox */
 	    column-count: inherit;
-	}
+	}	
 	#static.find-a-salon .copy {
 		-webkit-column-count: inherit; /* Chrome, Safari, Opera */
 	    -moz-column-count: inherit; /* Firefox */
