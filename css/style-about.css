@@ -37,10 +37,7 @@
 #static .copy p:last-child {
 	margin-bottom: 0;
 }
-@media only screen and (min-width: 480px) {
-	#static {
-		padding-top: 0;
-	}
+@media only screen and (min-width: 480px) {	
 	#static .billboard {
 		height: 543px;
 	}
@@ -53,11 +50,14 @@
 		background-image: url(../img/logo-desktop.png);
 		background-size: inherit;
 	}
-	#static .copy {
-		max-width: 1000px;
-		margin: 0 auto;		
+	#static .copy .heading {	
+		-webkit-column-span: all;
+		-moz-column-span: all;
+		column-span: all;
 	}
-	#static .copy .columns {
+	#static .copy {
+		max-width: 920px;
+		margin: 0 auto;
 		-webkit-column-count: 2; /* Chrome, Safari, Opera */
 	    -moz-column-count: 2; /* Firefox */
 	    column-count: 2;
@@ -65,4 +65,15 @@
 	    -moz-column-gap: 50px; /* Firefox */
 	    column-gap: 50px;
 	}
+	#static .copy p:last-child {
+		margin-bottom: 32px;
+	} 
+}
+@media only screen and (min-width: 768px) {
+	#static {
+		padding-top: 0;
+	}
+}
+@media only screen and (min-width: 1024px) {
+
 }

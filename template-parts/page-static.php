@@ -59,12 +59,8 @@
 			<div class="copy">
 				
 				<h2 class="heading"><?php echo __('our story', 'styleedit'); ?>:</h2>
-
-				<div class="columns">
-					
-					<?php the_content(); ?>
-
-				</div>				
+	
+				<?php the_content(); ?>				
 
 			</div>
 
