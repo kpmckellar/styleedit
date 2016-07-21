@@ -246,7 +246,6 @@ towards complexity
 	}
 
 	.navigation h1 {
-
 		top: 17px;
 		left: 20px;
 	}
@@ -323,4 +322,8 @@ body {
 	font-size: 16px;
 	-webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+}
+
+.site-content {
+	padding-top: 57px;
 }
