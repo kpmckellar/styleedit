@@ -1,0 +1,75 @@
+/* Product page styles */
+
+#products .billboard {
+	position: relative;
+	height: 350px;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-color: #000;
+	background-size: cover;
+}
+#products #logo h1 {
+	margin: 0;
+}
+#products #logo a {
+	position: absolute;
+	text-indent: -999em;
+	overflow: hidden;
+	z-index: 2;
+}
+#products .copy {
+	padding-top: 48px;
+	padding-left: 40px;
+	padding-right: 40px;
+}
+#products .copy .heading {
+	margin-top: 0;
+	margin-bottom: 32px;
+	font-weight: normal;
+}
+#products .copy p {
+	margin-top: 0;
+	margin-bottom: 32px;	
+}
+#products .copy p:last-child {
+	margin-bottom: 0;
+}
+
+@media only screen and (min-width: 480px) {
+
+}
+@media only screen and (min-width: 768px) {
+	#products .billboard {
+		height: 400px;
+	}
+	#products #logo a {
+		top: 50%;
+		left: 45px;
+		width: 93px;
+		height: 134px;
+		margin-top: -67px;
+		background-image: url(../img/logo-desktop.png);
+		background-size: inherit;
+	}
+	#products .copy {
+		max-width: 960px;
+		margin: 0 auto;		
+	}
+}
+@media only screen and (min-width: 1024px) {
+	#products .billboard {
+		height: 543px;
+	}
+	#products #logo a {
+		top: 50%;
+		left: 45px;
+		width: 93px;
+		height: 134px;
+		margin-top: -67px;
+		background-image: url(../img/logo-desktop.png);
+		background-size: inherit;
+	}	
+	#products .copy p:last-child {
+		margin-bottom: 32px;
+	}
+}
