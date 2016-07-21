@@ -32,7 +32,8 @@
 	font-size:11px;
 	color:#777;
 	font-style:italic;
-	padding: 0 0 0 10px;
+	padding: 5px 0 0 0px;
+	display: block;
 }
 
 .form-table.meta_box .meta_box_items {
@@ -45,6 +46,12 @@
 		width:20%;
 		min-width:100px;
 	}
+
+.form-table.meta_box textarea {
+	max-width: 50%;
+	width: 100%;
+	min-height: 80px;
+}
 
 /* repeatable */
 .form-table.meta_box .meta_box_repeatable, .form-table.meta_box .meta_box_group {
@@ -67,6 +74,7 @@
 	width:auto !important;
 	vertical-align:top;
 	padding:10px;
+	border-bottom: 1px dashed #999;
 }
 
 .form-table.meta_box .meta_box_repeatable tr:nth-child(even) td, .form-table.meta_box .meta_box_group tr:nth-child(even) td {

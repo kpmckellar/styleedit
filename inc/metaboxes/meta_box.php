@@ -48,7 +48,7 @@ function custom_meta_box_field( $field, $meta = null, $repeatable = null ) {
 		case 'tel':
 		case 'email':
 		default:
-			echo '<input type="' . $type . '" name="' . esc_attr( $name ) . '" id="' . esc_attr( $id ) . '" value="' . esc_attr( $meta ) . '" class="regular-text" style="width:'.esc_attr( $width ).';" size="30" />'. $desc . '<br/><br/>';
+			echo '<input type="' . $type . '" name="' . esc_attr( $name ) . '" id="' . esc_attr( $id ) . '" value="' . esc_attr( $meta ) . '" class="regular-text" style="width:'.esc_attr( $width ).';" size="30" /><br>'. $desc . '';
 		break;
 		case 'single_text':
 			echo '<input type="' . $type . '" name="' . esc_attr( $name ) . '" id="' . esc_attr( $id ) . '" value="' . esc_attr( $meta ) . '" class="regular-text" style="width:'.esc_attr( $width ).';" size="30" />';

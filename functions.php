@@ -165,6 +165,7 @@ require_once get_template_directory() . '/inc/metaboxes/meta_box.php';
  * Load Post Types.
  */
 require_once get_template_directory() . '/inc/post-homeSlider.php';
+require_once get_template_directory() . '/inc/post-products.php';
 
 /**
  * Register meta fields for static pages
