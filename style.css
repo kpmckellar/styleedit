@@ -270,6 +270,10 @@ towards complexity
 		background-repeat: no-repeat;
 		background-position: 3px;
 	}
+	
+	.site-content {
+		padding-top: 57px;
+	}
 }
 
 
@@ -322,8 +326,4 @@ body {
 	font-size: 16px;
 	-webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-}
-
-.site-content {
-	padding-top: 57px;
 }
