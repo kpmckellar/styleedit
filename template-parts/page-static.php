@@ -7,10 +7,8 @@
 ?>
 
 	<!-- Page content START -->
-
-	<?php if(is_page( 'about' )){ ?>
-		<link href="<?php bloginfo('template_directory'); ?>/css/style-about.css" rel="stylesheet" type="text/css">
-	<?php } ?>
+	
+	<link href="<?php bloginfo('template_directory'); ?>/css/style-static.css" rel="stylesheet" type="text/css">
 
 	<?php
 		
