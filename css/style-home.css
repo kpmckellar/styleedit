@@ -33,6 +33,9 @@ html,
 	background-position: center;
 	background-size: cover;
 }
+#homeSlider #logo h1 {
+	margin: 0;
+}
 #homeSlider #logo a {
 	position: absolute;
 	top: 0;

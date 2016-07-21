@@ -165,3 +165,28 @@ require_once get_template_directory() . '/inc/metaboxes/meta_box.php';
  * Load Post Types.
  */
 require_once get_template_directory() . '/inc/post-homeSlider.php';
+
+/**
+ * Register meta fields for static pages
+ */
+function post_page_meta($current_screen){
+	if ( 'page' == $current_screen->post_type && 'post' == $current_screen->base ) {
+		$prefix = 'page_';			
+		$fields = array(				
+			array(
+			    'label' => 'Page Tablet Image',
+			    'desc'  => 'The image that will be displayed on tablet devices.',
+			    'id'    => $prefix.'tablet_img',			
+			    'type'  => 'image'
+			),
+			array(
+			    'label' => 'Page Mobile Image',
+			    'desc'  => 'The image tht will be displayed on mobile devices.',
+			    'id'    => $prefix.'mobile_img',
+			    'type'  => 'image'
+			)
+		);
+		$page_box = new custom_add_meta_box( 'page_box', 'Page Options', $fields, 'page', true );
+	}
+}
+add_action( 'current_screen', 'post_page_meta' );

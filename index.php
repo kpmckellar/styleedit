@@ -40,7 +40,7 @@
 					}
 					@media only screen and (min-width: 481px) {
 						.slide<?php echo $id; ?> {
-							background-image: url(<?php echo $tablet_imgSrc; ?>);
+							background-image: url(<?php echo $desktop_imgSrc; ?>);
 						}	
 					}
 					@media only screen and (min-width: 1025px) {
@@ -68,7 +68,9 @@
 		</ul>
 
 		<div id="logo">
-			<h1><a href="<?php echo esc_url( home_url( '/' ) ); ?>">Style Edit</a></h1>
+			<h1>
+				<a href="<?php echo esc_url( home_url( '/' ) ); ?>">Style Edit</a>
+			</h1>
 		</div>
 
 	</section>
@@ -86,7 +88,7 @@
 				    loop:true,
 				    nav:false,
 				    autoplay:true,
-				    autoplayTimeout:2000
+				    autoplayTimeout:4000
 				});
 			}
 		})(jQuery);		
