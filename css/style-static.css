@@ -35,7 +35,9 @@
 }
 #static .copy p {
 	margin-top: 0;
-	margin-bottom: 32px;
+	margin-bottom: 32px;	
+}
+#static.find-a-salon .copy p {
 	text-align: center;
 }
 #static .copy p:last-child {
@@ -98,7 +100,7 @@
 	    -moz-column-gap: 50px; /* Firefox */
 	    column-gap: 50px;
 	}
-	#static .copy p {
+	#static.find-a-salon .copy p {
 		text-align: left;
 	}
 	#static.contact .copy {
