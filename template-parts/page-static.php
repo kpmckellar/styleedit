@@ -26,7 +26,7 @@
 
 	?>
 
-		<section id="static">
+		<section id="static" class="<?php echo $post->post_name;?>">
 			
 			<div class="billboard">
 				
@@ -56,7 +56,7 @@
 
 			<div class="copy">
 				
-				<h2 class="heading"><?php echo __('our story', 'styleedit'); ?>:</h2>
+				<h2 class="heading"><?php the_title(); ?>:</h2>
 	
 				<?php the_content(); ?>				
 
