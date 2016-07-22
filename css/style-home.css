@@ -32,6 +32,32 @@ html,
 	background-position: center;
 	background-size: cover;
 }
+#homeSlider .slide .text {
+	position: absolute;
+	top: 50%;
+	left: 240px;
+	width: 320px;
+	height: 134px;
+	margin-top: -67px;
+	font-size: 22px;
+	line-height: normal;
+	font-weight: normal;
+	color: #fff; 
+	display: inline-table;
+	-webkit-transition: 0.5s ease-in-out;
+	-ms-transition: 0.5s ease-in-out;
+	transition: 0.5s ease-in-out;
+	opacity: 0;
+	z-index: 2;
+}
+#homeSlider .active .text {
+	opacity: 1;
+	left: 250px;
+}
+#homeSlider .slide .text p {
+	display: table-cell;
+	vertical-align: middle;
+}
 #homeSlider #logo h1 {
 	margin: 0;
 }
@@ -45,7 +71,7 @@ html,
 	background-size: auto 93%;
 	text-indent: -999em;
 	overflow: hidden;
-	z-index: 2;
+	z-index: 3;
 }
 
 @media only screen and (min-width: 480px) {
