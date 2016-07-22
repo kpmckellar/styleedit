@@ -202,7 +202,7 @@ towards complexity
 
 
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 767px) {
 	.navigation {
 		position: fixed;
 		top: 0;
@@ -270,7 +270,7 @@ towards complexity
 		background-repeat: no-repeat;
 		background-position: 3px;
 	}
-	
+
 	.site-content {
 		padding-top: 57px;
 	}
