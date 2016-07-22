@@ -94,7 +94,7 @@
 				    	0:{
 				    		autoplay:false
 				    	},
-				    	768:{
+				    	568:{
 				    		autoplay:true
 				    	}
 				    }
