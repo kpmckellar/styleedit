@@ -88,9 +88,16 @@
 					items:1,			    
 				    margin:0,
 				    loop:true,
-				    nav:false,
-				    autoplay:true,
-				    autoplayTimeout:4000
+				    nav:false,				    
+				    autoplayTimeout:4000,
+				    responsive:{
+				    	0:{
+				    		autoplay:false
+				    	},
+				    	768:{
+				    		autoplay:true
+				    	}
+				    }
 				});
 			}
 		})(jQuery);		
