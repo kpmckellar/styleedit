@@ -1,6 +1,6 @@
 <?php
 
-	/* Template Name: Product */
+	/* Template Name: Collection */
 
 	get_header();
 
