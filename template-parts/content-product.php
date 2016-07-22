@@ -54,7 +54,8 @@
 
 	<div id="details">
 		<div class="container">
-			
+			<h2>sdffsfdsfdsfdsfdsfds hey what's up thIS IS A CHanGE</h2>
+			<p>jsdklfjdsklfjdsklfdsl</p>
 		</div>
 	</div>
 
