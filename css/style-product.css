@@ -1,75 +1,74 @@
 /* Product page styles */
 
-#products .billboard {
-	position: relative;
-	height: 350px;
-	background-repeat: no-repeat;
-	background-position: center;
-	background-color: #000;
-	background-size: cover;
+.product {
+
 }
-#products #logo h1 {
+.product .container {
+	position: relative;
+	max-width: 960px;	
+	margin: 0 auto;
+	padding-left: 40px;
+	padding-right: 40px;
+}
+.product #feature {
+	position: relative;
+}
+#collection #logo h1 {
 	margin: 0;
 }
-#products #logo a {
+#collection #logo a {
 	position: absolute;
 	text-indent: -999em;
 	overflow: hidden;
 	z-index: 2;
 }
-#products .copy {
-	padding-top: 48px;
-	padding-left: 40px;
-	padding-right: 40px;
+.product #feature .image {
+	display: none;
 }
-#products .copy .heading {
-	margin-top: 0;
-	margin-bottom: 32px;
-	font-weight: normal;
+.product #feature .productShot {
+	display: inline-block;
+	vertical-align: middle;
+	text-align: center;
 }
-#products .copy p {
-	margin-top: 0;
-	margin-bottom: 32px;	
+.product #feature .productShot img {
+	max-width: 100%;
+	height: auto;
+	display: block;
+	margin: 0 auto;
 }
-#products .copy p:last-child {
-	margin-bottom: 0;
+.product #feature .productShot .title {
+	font-size: 29px;
+	line-height: 27px;
+	letter-spacing: 0.03em;
+	margin: 0;
+}
+.product #feature .productShot .subTitle {
+	font-size: 16px;
+	line-height: 27px;
+	letter-spacing: 0.05em;
+	text-transform: uppercase;
+	margin: 0;
+}
+.product #feature .productShot .description {
+	font-size: 16px;
+	line-height: 27px;
+	margin: 0;
 }
 
 @media only screen and (min-width: 480px) {
-
+	.product #logo a {
+		top: 50%;
+		left: 45px;
+		width: 93px;
+		height: 134px;
+		margin-top: -67px;
+		background-image: url(../img/logo-desktop.png);
+		background-size: inherit;
+	}
 }
 @media only screen and (min-width: 768px) {
-	#products .billboard {
-		height: 400px;
-	}
-	#products #logo a {
-		top: 50%;
-		left: 45px;
-		width: 93px;
-		height: 134px;
-		margin-top: -67px;
-		background-image: url(../img/logo-desktop.png);
-		background-size: inherit;
-	}
-	#products .copy {
-		max-width: 960px;
-		margin: 0 auto;		
-	}
+	
 }
 @media only screen and (min-width: 1024px) {
-	#products .billboard {
-		height: 543px;
-	}
-	#products #logo a {
-		top: 50%;
-		left: 45px;
-		width: 93px;
-		height: 134px;
-		margin-top: -67px;
-		background-image: url(../img/logo-desktop.png);
-		background-size: inherit;
-	}	
-	#products .copy p:last-child {
-		margin-bottom: 32px;
-	}
+	
 }

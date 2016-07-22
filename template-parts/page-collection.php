@@ -8,7 +8,7 @@
 
 	<!-- Page content START -->
 	
-	<link href="<?php bloginfo('template_directory'); ?>/css/style-product.css" rel="stylesheet" type="text/css">
+	<link href="<?php bloginfo('template_directory'); ?>/css/style-collection.css" rel="stylesheet" type="text/css">
 
 	<?php
 		
@@ -26,7 +26,7 @@
 
 	?>
 
-		<section id="products">
+		<section id="collection">
 			
 			<div class="billboard">
 				

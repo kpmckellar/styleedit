@@ -67,15 +67,6 @@
 	max-width: 170px;
 }
 @media only screen and (min-width: 480px) {	
-	
-}
-@media only screen and (min-width: 768px) {
-	#static .billboard {
-		height: 400px;
-	}
-	#static.find-a-salon .billboard {
-		display: block;
-	}
 	#static #logo a {
 		top: 50%;
 		left: 45px;
@@ -85,6 +76,14 @@
 		background-image: url(../img/logo-desktop.png);
 		background-size: inherit;
 	}
+}
+@media only screen and (min-width: 768px) {
+	#static .billboard {
+		height: 400px;
+	}
+	#static.find-a-salon .billboard {
+		display: block;
+	}	
 	#static .copy .heading {	
 		-webkit-column-span: all;
 		-moz-column-span: all;
@@ -153,16 +152,7 @@
 	}
 	#static.find-a-salon .billboard {
 		display: block;
-	}
-	#static #logo a {
-		top: 50%;
-		left: 45px;
-		width: 93px;
-		height: 134px;
-		margin-top: -67px;
-		background-image: url(../img/logo-desktop.png);
-		background-size: inherit;
-	}
+	}	
 	#static .copy .heading {	
 		-webkit-column-span: all;
 		-moz-column-span: all;
