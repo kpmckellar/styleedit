@@ -6,6 +6,6 @@
 
 <section class="single-product">
 	
-
+	
 
 </section><!-- .no-results -->
