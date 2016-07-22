@@ -40,7 +40,7 @@
 					}
 					@media only screen and (min-width: 481px) {
 						.slide<?php echo $id; ?> {
-							background-image: url(<?php echo $desktop_imgSrc; ?>);
+							background-image: url(<?php echo $tablet_imgSrc; ?>);
 						}	
 					}
 					@media only screen and (min-width: 1025px) {
