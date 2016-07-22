@@ -48,12 +48,7 @@
 					<span class="commonText">matches hair color:</span>
 					<img src="<?php bloginfo('template_directory'); ?>/img/dark-blonde.png"/>
 				</li>
-				<li>
-					<span class="colorName">dark blonde</span>
-					<span class="commonText">matches hair color:</span>
-					<img src="<?php bloginfo('template_directory'); ?>/img/dark-blonde.png"/>
-				</li>
-			<lu>
+			</ul>
 		</div>
 	</div>
 
@@ -92,12 +87,25 @@
 	(function($){
 		$('#shades .title span').text($('#shades ul li').length);
 		if($('#shades ul li').length > 1){
-			var slider = $('#shades ul').owlCarousel({
+			var width = $(window).width();
+			var settings = {
 				items:1,
 			    margin:0,
 			    loop:true,
-			    nav:true			    
-			});
+			    nav:true
+			}			
+			var slider = $('#shades ul');
+			slider.owlCarousel(settings);
+
+			swap(width, slider);
+
+			function swap(width, slider){				
+				if(width >= 768){
+					slider.trigger('destroy.owl.carousel');
+				} else {
+					slider.trigger('refresh.owl.carousel');
+				}
+			}
 		}
 	})(jQuery);		
 </script>
