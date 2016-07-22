@@ -12,11 +12,12 @@
 }
 .product #feature {
 	position: relative;
+	margin-bottom: 40px;
 }
-#collection #logo h1 {
+.product #logo h1 {
 	margin: 0;
 }
-#collection #logo a {
+.product #logo a {
 	position: absolute;
 	text-indent: -999em;
 	overflow: hidden;
@@ -31,8 +32,6 @@
 	text-align: center;
 }
 .product #feature .productShot img {
-	max-width: 100%;
-	height: auto;
 	display: block;
 	margin: 0 auto;
 }
@@ -53,6 +52,81 @@
 	font-size: 16px;
 	line-height: 27px;
 	margin: 0;
+}
+.product #shades {
+	position: relative;
+	padding: 40px 0;
+	margin-bottom: 50px;
+	background-color: #faf9f9;
+}
+.product #shades .title {
+	font-size: 15px;
+	line-height: 18px;
+	letter-spacing: 0.05em;
+	text-transform: uppercase;
+	text-align: center;
+	margin: 0 0 20px;
+}
+.product #shades ul {
+	position: relative;
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+.product #shades .colorName {
+	font-size: 15px;
+	line-height: 20px;
+	text-align: center;
+	display: block;
+}
+.product #shades .commonText {
+	font-size: 15px;
+	line-height: 20px;
+	text-align: center;
+	text-transform: uppercase;
+	display: block;
+	margin-bottom: 20px;
+}
+.product #video {
+	text-align: center;
+}
+.product #video .embed {
+	position: relative;
+	display: inline-block;
+	vertical-align: top;
+}
+.product #video .embed img {
+	display: block;
+}
+.product #video .embed .play {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-image: url(../img/play-btn.png);
+	background-repeat: no-repeat;
+	background-position: center;
+	cursor: pointer;
+}
+.product #video .embed .hold {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: #000;
+	display: none;
+}
+.product #video .embed .hold iframe,
+.product #video .embed .hold embed,
+.product #video .embed .hold object {
+	width: 100%;
+	height: 100%;
+	display: block;
+}
+.product #dualFeature .image {
+	display: none;
 }
 
 @media only screen and (min-width: 480px) {

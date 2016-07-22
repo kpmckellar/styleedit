@@ -31,22 +31,22 @@
 
 	<div id="shades">
 		<div class="container">
-			<h3 class="title">available in x shades</h3>
+			<h3 class="title">available in <span>x</span> shades</h3>
 			<ul>
 				<li>
 					<span class="colorName">dark blonde</span>
 					<span class="commonText">matches hair color:</span>
-					<img src="<?php bloginfo('template_directory'); ?>/img/shade.png"/>
+					<img src="<?php bloginfo('template_directory'); ?>/img/dark-blonde.png"/>
 				</li>
 				<li>
 					<span class="colorName">dark blonde</span>
 					<span class="commonText">matches hair color:</span>
-					<img src="<?php bloginfo('template_directory'); ?>/img/shade.png"/>
+					<img src="<?php bloginfo('template_directory'); ?>/img/dark-blonde.png"/>
 				</li>
 				<li>
 					<span class="colorName">dark blonde</span>
 					<span class="commonText">matches hair color:</span>
-					<img src="<?php bloginfo('template_directory'); ?>/img/shade.png"/>
+					<img src="<?php bloginfo('template_directory'); ?>/img/dark-blonde.png"/>
 				</li>
 			<lu>
 		</div>
@@ -70,8 +70,28 @@
 
 	<div id="dualFeature">
 		<div class="container">
-			<img src="<?php bloginfo('template_directory'); ?>/img/dual-feature.jpg"/>
+			<div class="image">
+				<img src="<?php bloginfo('template_directory'); ?>/img/dual-feature.jpg"/>
+			</div>
 		</div>
 	</div>
 
 </section><!-- .no-results -->
+
+<!-- Owl Carousel -->
+<link href="<?php bloginfo('template_directory'); ?>/js/owl-carousel/owl.carousel.css" rel="stylesheet" type="text/css">
+<link href="<?php bloginfo('template_directory'); ?>/js/owl-carousel/owl.theme.css" rel="stylesheet" type="text/css">
+<script src="<?php bloginfo('template_directory'); ?>/js/owl-carousel/owl.carousel.min.js" type="text/javascript"></script>
+<script type="text/javascript">
+	(function($){
+		$('#shades .title span').text($('#shades ul li').length);
+		if($('#shades ul li').length > 1){
+			var slider = $('#shades ul').owlCarousel({
+				items:1,
+			    margin:0,
+			    loop:true,
+			    nav:true			    
+			});
+		}
+	})(jQuery);		
+</script>
