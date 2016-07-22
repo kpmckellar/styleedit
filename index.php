@@ -48,6 +48,11 @@
 							background-image: url(<?php echo $desktop_imgSrc; ?>);
 						}	
 					}
+					@media only screen and (max-width: 736px) and (orientation: landscape) {
+						.slide<?php echo $id; ?> {
+							background-image: url(<?php echo $desktop_imgSrc; ?>);
+						}	
+					}
 				</style>	
 			
 				<div class="text">
@@ -94,7 +99,7 @@
 				    	0:{
 				    		autoplay:false
 				    	},
-				    	568:{
+				    	768:{
 				    		autoplay:true
 				    	}
 				    }
