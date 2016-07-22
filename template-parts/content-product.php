@@ -48,6 +48,11 @@
 					<span class="commonText">matches hair color:</span>
 					<img src="<?php bloginfo('template_directory'); ?>/img/dark-blonde.png"/>
 				</li>
+				<li>
+					<span class="colorName">dark blonde</span>
+					<span class="commonText">matches hair color:</span>
+					<img src="<?php bloginfo('template_directory'); ?>/img/dark-blonde.png"/>
+				</li>
 			<lu>
 		</div>
 	</div>
