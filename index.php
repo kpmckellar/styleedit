@@ -15,7 +15,7 @@
 
 		<?php
 
-			$slider_arguments = array( 'post_type' => 'slider', 'orderby' => 'date', 'order' => 'DESC', 'posts_per_page' => -1 );
+			$slider_arguments = array( 'post_type' => 'slider', 'orderby' => 'date', 'order' => 'ASC', 'posts_per_page' => -1 );
 			$queue_slider = new WP_Query( $slider_arguments );
 			
 			if ( $queue_slider->have_posts() ) :
