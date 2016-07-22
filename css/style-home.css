@@ -15,7 +15,7 @@ html,
 	height: 100%;
 }
 .home {
-	padding-bottom: 190px;
+	padding-bottom: 0;
 }
 #homeSlider {
 	position: relative;
@@ -47,10 +47,6 @@ html,
 	overflow: hidden;
 	z-index: 2;
 }
-/* Footer fixed on homepage */
-.site-footer {
-	position: fixed;
-}
 
 @media only screen and (min-width: 480px) {
 	#homeSlider #logo a {
@@ -62,16 +58,10 @@ html,
 		background-image: url(../img/logo-desktop.png);
 		background-size: inherit;
 	}
-	/* Unfix footer after 480 */
-	.site-footer {
-		position: static;
-	}
 }
 @media only screen and (min-width: 768px) {
 
 }
 @media only screen and (min-width: 1024px) {
-	#homeSlider {
-		max-height: 768px;
-	}
+
 }
