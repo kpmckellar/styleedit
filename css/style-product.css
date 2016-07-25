@@ -170,6 +170,10 @@
 	display: none;
 }
 
+#accordion {
+
+}
+
 @media only screen and (min-width: 480px) {
 	.product #feature .productShot {
 		width: 100%
@@ -179,6 +183,10 @@
 		background-image: url(../img/logo-desktop-black.png); 
 		background-size: inherit;
 		visibility: hidden;
+	}
+
+	#accordion {
+		
 	}
 }
 @media only screen and (min-width: 768px) {
@@ -211,6 +219,10 @@
 		margin: 0 30px;
 		max-width: 160px;
 	}
+	
+	#accordion {
+	
+	}
 }
 @media only screen and (min-width: 1024px) {
 	.product #logo a {
@@ -224,5 +236,8 @@
 	}
 	.product #shades ul li {
 		margin: 0 35px;
+
+	#accordion {
+
 	}
 }
