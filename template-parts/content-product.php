@@ -5,6 +5,7 @@
 ?>
 
 <link href="<?php bloginfo('template_directory'); ?>/css/style-product.css" rel="stylesheet" type="text/css">
+<script src="https://code.jquery.com/ui/1.12.0/jquery-ui.js"></script>
 
 <section class="product">
 	
@@ -53,10 +54,36 @@
 	</div>
 
 	<div id="details">
-		<div class="container">
-			<h2>sdffsfdsfdsfdsfdsfds hey what's up thIS IS A CHanGE</h2>
-			<p>jsdklfjdsklfjdsklfdsl</p>
+		<script>
+			$( function() {
+				$( "#accordion" ).accordion({
+				collapsible: true
+				});
+			});
+		</script>
+		
+	<div id="accordion">
+		<h3>what it does</h3>
+		<div>
+			<p>this temporary, touch-up spray instantly lightens and brightens to blend dark roots and perfectly disguises gray roots, leaving hair looking refreshed, revived, and ready for anything. works in seconds and shampoos out.</p>
 		</div>
+
+		<h3>what’s in it</h3>
+		<div>
+			<p>multi-chromatic pigments for self-adjusting color that matches your signature hue and blends visible dark and gray roots. emollients impart vibrant shine with a natural-feeling texture.</p>
+		</div>
+		
+		<h3>what’s NOT in it</h3>
+		<div>
+			<p>peroxide, ammonia, or any harsh or permanent dyes. not tested on animals.</p>
+		</div>
+
+		<h3>directions</h3>
+		<div>
+			<p>shake well. test spray before use. for best results, apply to clean, dry hair. hold can 4-5 inches from hair. move can continuously back and forth until roots are evenly camouflaged. let dry 2-3 minutes. apply more if necessary. if product comes into contact with hands or skin during application, remove quickly with damp cloth and/or soap and water. not recommended for facial hair, eyebrows or body hair.</p>
+			</div>
+		</div>
+
 	</div>
 
 	<div id="video">

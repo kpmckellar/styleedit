@@ -129,6 +129,10 @@
 	display: none;
 }
 
+#accordion {
+
+}
+
 @media only screen and (min-width: 480px) {
 	.product #logo a {
 		top: 50%;
@@ -139,10 +143,18 @@
 		background-image: url(../img/logo-desktop.png);
 		background-size: inherit;
 	}
+
+	#accordion {
+		
+	}
 }
 @media only screen and (min-width: 768px) {
-	
+	#accordion {
+		
+	}
 }
 @media only screen and (min-width: 1024px) {
-	
+	#accordion {
+		
+	}
 }
