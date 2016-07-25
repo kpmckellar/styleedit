@@ -111,8 +111,17 @@
 <script src="<?php bloginfo('template_directory'); ?>/js/owl-carousel/owl.carousel.min.js" type="text/javascript"></script>
 <script type="text/javascript">
 	(function($){
-		$('#shades .title span').text($('#shades ul li').length);
+		if($('#video .embed').length){
+			$('#video .play').on('click', function(){
+				var el = $(this);
+				var hold = $(this).parent().find('.hold');
+				var videoId = '1eHG-7l0vXg';
+				var iframe = '<iframe width="560" height="315" src="https://www.youtube.com/embed/'+videoId+'?wmode=transparent&amp;autoplay=1" frameborder="0" allowfullscreen></iframe>';
+				hold.append(iframe).fadeIn(300);
+			});
+		}
 		if($('#shades ul li').length > 1){
+			$('#shades .title span').text($('#shades ul li').length);
 			var width = $(window).width();
 			var settings = {
 				items:1,
