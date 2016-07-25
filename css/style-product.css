@@ -1,6 +1,6 @@
 /* Product page styles */
 
-.navigation a {
+.main_navigation .menu-item a {
 	color: #000;
 }
 .main_navigation .menu-item a:hover {
@@ -8,7 +8,7 @@
 }
 
 .product {
-	padding-top: 80px;
+	padding-top: 0px;
 }
 .product .container {
 	position: relative;
@@ -45,6 +45,7 @@
 	display: inline-block;
 	vertical-align: middle;
 	text-align: center;
+	padding: 0;
 }
 .product #feature .productShot img {
 	display: block;
@@ -170,6 +171,48 @@
 }
 
 @media only screen and (min-width: 480px) {
+	.product #feature .productShot {
+		width: 100%
+	}
+	.product #logo a {
+		margin-top: -63px;
+		background-image: url(../img/logo-desktop-black.png); 
+		background-size: inherit;
+		visibility: hidden;
+	}
+}
+@media only screen and (min-width: 768px) {
+	.product {
+		padding-top: 80px;
+	}
+	.product #feature .image {
+		width: 50%;
+		display: inline-block;
+	}
+	.product #feature .productShot {
+		width: 50%;
+		padding: 0 40px;
+	}
+	.product #logo a {
+		top: 75%;
+		left: 10%;
+		width: 93px;
+		height: 134px;
+		background-image: url(../img/logo-desktop.png);
+		visibility: visible;
+	}
+	.product #shades ul {
+		padding: 0;
+		text-align: center;
+	}
+	.product #shades ul li {
+		display: inline-block;
+		vertical-align: top;
+		margin: 0 30px;
+		max-width: 160px;
+	}
+}
+@media only screen and (min-width: 1024px) {
 	.product #logo a {
 		top: 50%;
 		left: 45px;
@@ -179,25 +222,7 @@
 		background-image: url(../img/logo-desktop-black.png); 
 		background-size: inherit;
 	}
-}
-@media only screen and (min-width: 768px) {
-	.product #feature .image {
-		width: 50%;
-		display: inline-block;
-	}
-	.product #feature .productShot {
-		width: 50%;
-	}
-	.product #shades ul {
-		padding: 0;
-		text-align: center;
-	}
 	.product #shades ul li {
-		display: inline-block;
-		vertical-align: top;
-		margin: 0 32px;
+		margin: 0 35px;
 	}
-}
-@media only screen and (min-width: 1024px) {
-	
 }
