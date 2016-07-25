@@ -66,7 +66,7 @@
 				
 				<div id="locator">
 					
-				<?php echo do_shortcode('[wpsl]'); ?>
+					<?php echo do_shortcode('[wpsl]'); ?>
 
 				</div>
 
