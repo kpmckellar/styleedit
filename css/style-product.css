@@ -176,11 +176,20 @@
 }
 
 .whatItDoes {
-	
+	text-align: center;
+}
+
+.whatItDoes h3 {
+	font-size: 16px;
+}
+
+.whatItDoes p {
+	font-size: 16px;
 }
 
 #accordion {
 	text-transform: lowercase;
+	margin-bottom: 50px;
 }
 
 #accordion h3 {
@@ -193,7 +202,7 @@
 	text-transform: uppercase;
 	border-bottom: 1px solid #000;
 	line-height: 1;
-	padding: 25px;
+	padding: 25px 0;
 	margin: 0;
 }
 

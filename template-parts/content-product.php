@@ -54,14 +54,6 @@
 	</div>
 
 	<div id="details">
-		<script>
-			$( function() {
-				$( "#accordion" ).accordion({
-				collapsible: true,
-				heightStyle: "content"
-				});
-			});
-		</script>
 		<div class="whatItDoes">
 			<h3>what it does</h3>
 			<div>
@@ -129,18 +121,43 @@
 			    nav:true
 			}			
 			var slider = $('#shades ul');
+			slider.owlCarousel(settings);
 
 			swap(width, slider);
 
 			function swap(width, slider){				
 				if(width >= 768){
-					// slider.trigger('destroy.owl.carousel');
-					// slider.owlCarousel(settings);
+					slider.trigger('destroy.owl.carousel');
 				} else {
-					// slider.trigger('refresh.owl.carousel');
-					slider.owlCarousel(settings);
+					slider.trigger('refresh.owl.carousel');
 				}
 			}
 		}
-	})(jQuery);		
+	})(jQuery);
 </script>
+
+
+		<script>
+		var accordionSelector = $("#accordion")
+		var windowSize = $(window).width();
+		
+		accordionSelector.accordion({
+			collapsible: true,
+			heightStyle: "content"
+		});
+
+		if (windowSize > 586) {
+	    	accordionSelector.accordion( "destroy" );
+	    }
+
+		$(window).resize(function() {
+			    if(windowSize < 586){
+			    	accordionSelector.accordion({
+					collapsible: true,
+					heightStyle: "content"
+				});
+			    } else {
+			    	accordionSelector.accordion( "destroy" );
+			    }
+			})
+		</script>
