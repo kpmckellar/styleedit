@@ -1,7 +1,14 @@
 /* Product page styles */
 
-.product {
+.navigation a {
+	color: #000;
+}
+.main_navigation .menu-item a:hover {
+	border-color: #000;
+}
 
+.product {
+	padding-top: 80px;
 }
 .product .container {
 	position: relative;
@@ -23,8 +30,16 @@
 	overflow: hidden;
 	z-index: 2;
 }
+.product #feature .hold {
+	font-size: 0;
+}
 .product #feature .image {
 	display: none;
+	vertical-align: middle;
+}
+.product #feature .image img {
+	display: block;
+	margin: 0 auto;
 }
 .product #feature .productShot {
 	display: inline-block;
@@ -70,8 +85,13 @@
 .product #shades ul {
 	position: relative;
 	margin: 0;
-	padding: 0;
+	padding: 0 20%;
 	list-style: none;
+}
+.product #shades ul img {
+	width: auto;
+	margin: 0 auto;
+	display: block;
 }
 .product #shades .colorName {
 	font-size: 15px;
@@ -86,6 +106,26 @@
 	text-transform: uppercase;
 	display: block;
 	margin-bottom: 20px;
+}
+.product #shades .owl-nav .owl-prev,
+.product #shades .owl-nav .owl-next {
+	position: absolute;
+	top: 50%;
+	margin-top: -41px;
+	width: 26px;
+	height: 82px;
+	background-image: url(../img/arrows.png);
+	background-repeat: no-repeat;
+	text-indent: -999em;
+	overflow: hidden;
+}
+.product #shades .owl-nav .owl-prev {
+	left: 0;
+	background-position: left center;
+}
+.product #shades .owl-nav .owl-next {
+	right: 0;
+	background-position: right center;
 }
 .product #video {
 	text-align: center;
@@ -137,10 +177,10 @@
 	.product #logo a {
 		top: 50%;
 		left: 45px;
-		width: 93px;
-		height: 134px;
-		margin-top: -67px;
-		background-image: url(../img/logo-desktop.png);
+		width: 85px;
+		height: 126px;
+		margin-top: -63px;
+		background-image: url(../img/logo-desktop-black.png); 
 		background-size: inherit;
 	}
 
@@ -150,7 +190,24 @@
 }
 @media only screen and (min-width: 768px) {
 	#accordion {
-		
+	
+	}
+
+	.product #feature .image {
+		width: 50%;
+		display: inline-block;
+	}
+	.product #feature .productShot {
+		width: 50%;
+	}
+	.product #shades ul {
+		padding: 0;
+		text-align: center;
+	}
+	.product #shades ul li {
+		display: inline-block;
+		vertical-align: top;
+		margin: 0 32px;
 	}
 }
 @media only screen and (min-width: 1024px) {
