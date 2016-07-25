@@ -129,15 +129,16 @@
 			    nav:true
 			}			
 			var slider = $('#shades ul');
-			slider.owlCarousel(settings);
 
 			swap(width, slider);
 
 			function swap(width, slider){				
 				if(width >= 768){
-					slider.trigger('destroy.owl.carousel');
+					// slider.trigger('destroy.owl.carousel');
+					// slider.owlCarousel(settings);
 				} else {
-					slider.trigger('refresh.owl.carousel');
+					// slider.trigger('refresh.owl.carousel');
+					slider.owlCarousel(settings);
 				}
 			}
 		}
