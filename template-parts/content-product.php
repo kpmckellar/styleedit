@@ -57,16 +57,19 @@
 		<script>
 			$( function() {
 				$( "#accordion" ).accordion({
-				collapsible: true
+				collapsible: true,
+				heightStyle: "content"
 				});
 			});
 		</script>
+		<div class="whatItDoes">
+			<h3>what it does</h3>
+			<div>
+				<p>this temporary, touch-up spray instantly lightens and brightens to blend dark roots and perfectly disguises gray roots, leaving hair looking refreshed, revived, and ready for anything. works in seconds and shampoos out.</p>
+			</div>
+		</div>
 		
 	<div id="accordion">
-		<h3>what it does</h3>
-		<div>
-			<p>this temporary, touch-up spray instantly lightens and brightens to blend dark roots and perfectly disguises gray roots, leaving hair looking refreshed, revived, and ready for anything. works in seconds and shampoos out.</p>
-		</div>
 
 		<h3>what’s in it</h3>
 		<div>
@@ -81,7 +84,11 @@
 		<h3>directions</h3>
 		<div>
 			<p>shake well. test spray before use. for best results, apply to clean, dry hair. hold can 4-5 inches from hair. move can continuously back and forth until roots are evenly camouflaged. let dry 2-3 minutes. apply more if necessary. if product comes into contact with hands or skin during application, remove quickly with damp cloth and/or soap and water. not recommended for facial hair, eyebrows or body hair.</p>
-			</div>
+		</div>
+
+		<h3>ingredients</h3>
+		<div>
+			<p>butane, hydrofluorocarbon 152a, ethyl trisiloxane, trimethylsiloxysilicate, polypropylsilsesquioxane, fragrance, synthetic fluorphlogopite, tin oxide, triethoxycaprylylsilane, mica, titanium dioxide (ci 77891), iron oxides (ci 77491, ci 77492, ci 77499).  may contain: ferric ferrocyanide (ci 77510).</p>
 		</div>
 
 	</div>
