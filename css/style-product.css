@@ -202,8 +202,7 @@
 		width: 100%
 	}
 	.product #logo a {
-		margin-top: -63px;
-		background-image: url(../img/logo-desktop-black.png); 
+		margin-top: -67px; 
 		background-size: inherit;
 		visibility: hidden;
 	}
@@ -249,6 +248,22 @@
 }
 @media only screen and (min-width: 1024px) {
 	.product #logo a {
+		top: 75%;
+		left: 10%;
+		width: 93px;
+		height: 134px;
+		background-image: url(../img/logo-desktop.png);
+		visibility: visible;
+	}
+	.product #shades ul li {
+		margin: 0 35px;
+
+	#accordion {
+
+	}
+}
+@media only screen and (min-width: 1025px) {
+	.product #logo a {
 		top: 50%;
 		left: 45px;
 		width: 85px;
@@ -256,11 +271,5 @@
 		margin-top: -63px;
 		background-image: url(../img/logo-desktop-black.png); 
 		background-size: inherit;
-	}
-	.product #shades ul li {
-		margin: 0 35px;
-
-	#accordion {
-
 	}
 }

@@ -62,6 +62,16 @@
 
 			</div>
 
+			<?php if( is_page('find-a-salon') ){ ?>
+				
+				<div id="locator">
+					
+				<?php echo do_shortcode('[wpsl]'); ?>
+
+				</div>
+
+			<?php } ?>
+
 		</section>
 
 	<?php 
