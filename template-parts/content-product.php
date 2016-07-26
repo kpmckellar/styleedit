@@ -85,7 +85,7 @@
 				<p>shake well. test spray before use. for best results, apply to clean, dry hair. hold can 4-5 inches from hair. move can continuously back and forth until roots are evenly camouflaged. let dry 2-3 minutes. apply more if necessary. if product comes into contact with hands or skin during application, remove quickly with damp cloth and/or soap and water. not recommended for facial hair, eyebrows or body hair.</p>
 			</div>
 
-			<h3 id="ingredients_header">ingredients</h3><img src="<?php bloginfo('template_directory'); ?>/img/ingredients_open.png" id="ingredients_open" />
+			<div id="wrapper_ingredients"><h3 id="ingredients_header">ingredients</h3><img src="<?php bloginfo('template_directory'); ?>/img/ingredients_open.png" id="ingredients_open" /></div>
 			<div id="ingredients_content">
 				<img src="<?php bloginfo('template_directory'); ?>/img/ingredients_close.png" id="ingredients_close" />
 				<p>butane, hydrofluorocarbon 152a, ethyl trisiloxane, trimethylsiloxysilicate, polypropylsilsesquioxane, fragrance, synthetic fluorphlogopite, tin oxide, triethoxycaprylylsilane, mica, titanium dioxide (ci 77891), iron oxides (ci 77491, ci 77492, ci 77499).  may contain: ferric ferrocyanide (ci 77510).</p>
@@ -156,7 +156,7 @@
 	})(jQuery);
 </script>
 
-
+		<!-- accordion functionality KM -->
 		<script>
 		var accordionSelector = $("#accordion")
 		var windowSize = $(window).width();
@@ -181,3 +181,20 @@
 			    }
 			})
 		</script>
+	
+		<!-- ingredients popup KM -->
+		<script>
+			$('#ingredients_open, #ingredients_close').click(function() {
+				$('#ingredients_content').toggleClass('show')
+			})
+		</script>
+
+
+
+
+
+
+
+
+
+

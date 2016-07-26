@@ -213,6 +213,10 @@
 	margin-top: 0;
 }
 
+.whatItDoes p:last-of-type {
+	margin-bottom: 0;
+}
+
 .whatItDoes p {
 	font-size: 16px;
 	// line-height: 1.5;
@@ -251,6 +255,11 @@
 
 .btn_salon:hover {
 	color: #fff;
+}
+
+#ingredients_open,
+#ingredients_close {
+	display: none;
 }
 
 @media only screen and (min-width: 480px) {
@@ -331,12 +340,26 @@
 		font-size: 15px;
 	}
 
+	#wrapper_ingredients {
+		display: -webkit-inline-flex; /* Safari */
+		display: flex;
+		-webkit-flex-direction: row; /* Safari */
+  		flex-direction: row;
+  		-webkit-align-items: center; /* Safari */
+		align-items: center;
+		margin-top: 25px;
+	}
+
 	h3#ingredients_header {
 		display: inline-block;
+		margin: 0;
+		padding: 0;
+		text-transform: uppercase;
 	}
 
 	#ingredients_open {
 		display: inline-block;
+		margin-left: 10px;
 	}
 
 	#ingredients_content {
@@ -347,9 +370,18 @@
 		font-size: 13px;
 		padding: 50px;
 		z-index: 1;
+		left: 50%;
+		margin-left: -165px;
+		margin-top: -100px;
+		display: none;
+	}
+
+	.show {
+		display: block !important;
 	}
 
 	#ingredients_close {
+		display: block;
 		position: absolute;
 		top: 16px;
 		right: 16px;
