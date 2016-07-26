@@ -173,6 +173,31 @@
 #details {
 	padding-left: 40px;
 	padding-right: 40px;
+	margin-bottom: 50px;
+}
+
+.beforeafter {
+	margin-bottom: 40px;
+}
+
+.prod_img_before,
+.prod_img_after {
+	display: inline-block;
+	width: 50%;
+	margin: 0;
+}
+
+.prod_img_before {
+	padding-right: 15px;
+}
+
+.prod_img_after {
+	padding-left: 15px;
+}
+
+.prod_img_before img,
+.prod_img_after img {
+	width: 100%;
 }
 
 .whatItDoes {
@@ -180,11 +205,17 @@
 }
 
 .whatItDoes h3 {
+	margin-bottom: 0;
 	font-size: 16px;
+}
+
+.whatItDoes p:first-of-type {
+	margin-top: 0;
 }
 
 .whatItDoes p {
 	font-size: 16px;
+	// line-height: 1.5;
 }
 
 #accordion {
@@ -206,9 +237,25 @@
 	margin: 0;
 }
 
+.btn_salon {
+	display: block;
+	height: 75px;
+	background: #000;
+	color: #fff;
+	line-height: 75px;
+	text-align: center;
+	text-transform: uppercase;
+	text-decoration: none;
+	font-size: 20px;
+}
+
+.btn_salon:hover {
+	color: #fff;
+}
+
 @media only screen and (min-width: 480px) {
 	.product #feature .productShot {
-		width: 100%
+		width: 100%;
 	}
 	.product #logo a {
 		margin-top: -63px;
@@ -217,10 +264,24 @@
 		visibility: hidden;
 	}
 
-	#accordion {
-		
+	#accordion p {
+		margin: 0;
 	}
 }
+
+@media only screen and (min-width: 586px) {
+	.whatItDoes {
+		text-align: left;
+	}
+
+	#accordion h3 {
+		border: 0;
+		text-transform: lowercase;
+		background: none;
+		padding-bottom: 7px;
+	}
+}
+
 @media only screen and (min-width: 768px) {
 	.product {
 		padding-top: 80px;
@@ -251,10 +312,50 @@
 		margin: 0 30px;
 		max-width: 160px;
 	}
-	
-	#accordion {
-	
+
+	#details {
+		padding-left: 100px;
+		padding-right: 100px;
 	}
+
+	.beforeafter {
+		width: 440px;
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	.btn_salon {
+		width: 160px;
+		margin: 0 auto;
+		height: 35px;
+		line-height: 35px;
+		font-size: 15px;
+	}
+
+	h3#ingredients_header {
+		display: inline-block;
+	}
+
+	#ingredients_open {
+		display: inline-block;
+	}
+
+	#ingredients_content {
+		position: absolute;
+		width: 330px;
+		background-color: rgba(26, 26, 26, 0.96);
+		color: #fff;
+		font-size: 13px;
+		padding: 50px;
+		z-index: 1;
+	}
+
+	#ingredients_close {
+		position: absolute;
+		top: 16px;
+		right: 16px;
+	}
+
 }
 @media only screen and (min-width: 1024px) {
 	.product #logo a {

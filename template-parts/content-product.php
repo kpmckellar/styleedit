@@ -54,6 +54,13 @@
 	</div>
 
 	<div id="details">
+		<div class="beforeafter">
+			<figure class="prod_img_before">
+				<img src="<?php bloginfo('template_directory'); ?>/img/before.jpg" />
+			</figure><figure class="prod_img_after">
+				<img src="<?php bloginfo('template_directory'); ?>/img/after.jpg" />
+			</figure>
+		</div>
 		<div class="whatItDoes">
 			<h3>what it does</h3>
 			<div>
@@ -61,28 +68,32 @@
 			</div>
 		</div>
 		
-	<div id="accordion">
+		<div id="accordion">
 
-		<h3>what’s in it</h3>
-		<div>
-			<p>multi-chromatic pigments for self-adjusting color that matches your signature hue and blends visible dark and gray roots. emollients impart vibrant shine with a natural-feeling texture.</p>
-		</div>
-		
-		<h3>what’s NOT in it</h3>
-		<div>
-			<p>peroxide, ammonia, or any harsh or permanent dyes. not tested on animals.</p>
+			<h3>what’s in it</h3>
+			<div>
+				<p>multi-chromatic pigments for self-adjusting color that matches your signature hue and blends visible dark and gray roots. emollients impart vibrant shine with a natural-feeling texture.</p>
+			</div>
+			
+			<h3>what’s NOT in it</h3>
+			<div>
+				<p>peroxide, ammonia, or any harsh or permanent dyes. not tested on animals.</p>
+			</div>
+
+			<h3>directions</h3>
+			<div>
+				<p>shake well. test spray before use. for best results, apply to clean, dry hair. hold can 4-5 inches from hair. move can continuously back and forth until roots are evenly camouflaged. let dry 2-3 minutes. apply more if necessary. if product comes into contact with hands or skin during application, remove quickly with damp cloth and/or soap and water. not recommended for facial hair, eyebrows or body hair.</p>
+			</div>
+
+			<h3 id="ingredients_header">ingredients</h3><img src="<?php bloginfo('template_directory'); ?>/img/ingredients_open.png" id="ingredients_open" />
+			<div id="ingredients_content">
+				<img src="<?php bloginfo('template_directory'); ?>/img/ingredients_close.png" id="ingredients_close" />
+				<p>butane, hydrofluorocarbon 152a, ethyl trisiloxane, trimethylsiloxysilicate, polypropylsilsesquioxane, fragrance, synthetic fluorphlogopite, tin oxide, triethoxycaprylylsilane, mica, titanium dioxide (ci 77891), iron oxides (ci 77491, ci 77492, ci 77499).  may contain: ferric ferrocyanide (ci 77510).</p>
+			</div>
+
 		</div>
 
-		<h3>directions</h3>
-		<div>
-			<p>shake well. test spray before use. for best results, apply to clean, dry hair. hold can 4-5 inches from hair. move can continuously back and forth until roots are evenly camouflaged. let dry 2-3 minutes. apply more if necessary. if product comes into contact with hands or skin during application, remove quickly with damp cloth and/or soap and water. not recommended for facial hair, eyebrows or body hair.</p>
-		</div>
-
-		<h3>ingredients</h3>
-		<div>
-			<p>butane, hydrofluorocarbon 152a, ethyl trisiloxane, trimethylsiloxysilicate, polypropylsilsesquioxane, fragrance, synthetic fluorphlogopite, tin oxide, triethoxycaprylylsilane, mica, titanium dioxide (ci 77891), iron oxides (ci 77491, ci 77492, ci 77499).  may contain: ferric ferrocyanide (ci 77510).</p>
-		</div>
-
+		<a href="find-a-salon" class="btn_salon">Find a Salon</a>
 	</div>
 
 	<div id="video">
