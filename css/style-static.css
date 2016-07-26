@@ -492,6 +492,7 @@
 		width: 48%;
 		height: 40px;
 		max-width: 160px;
+		text-align: left;
 	}
 	#static.find-a-salon #locator .wpsl-search input {
 		width: 100%;
@@ -542,6 +543,7 @@
 	#static.find-a-salon #locator .wpsl-search .wpsl-select-wrap .wpsl-selected-item,
 	#static.find-a-salon #locator .wpsl-search .wpsl-select-wrap .wpsl-dropdown > div {
 		width: 100%;
+		text-align: left;
 	}
 	#static.find-a-salon #locator .wpsl-search .wpsl-select-wrap #wpsl-radius,
 	#static.find-a-salon #locator .wpsl-search .wpsl-select-wrap #wpsl-results {
