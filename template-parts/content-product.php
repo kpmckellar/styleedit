@@ -1,7 +1,15 @@
 <?php
 
 	/* Template for displaying single product */
+	
 	$id = get_the_ID();
+
+	$header_img = wp_get_attachment_image_src( get_post_meta($id, 'products_header_img', true), 'full' );
+	$header_imgSrc = $header_img[0];
+	$subtitle = get_post_meta($id, 'products_subtitle', true);
+	$description = get_post_meta($id, 'products_description', true);
+
+	$shades = get_post_meta($id, 'products_shades', true);
 
 	$before_img = wp_get_attachment_image_src( get_post_meta($id, 'products_before_img', true), 'full' );
 	$before_imgSrc = $before_img[0];
@@ -12,8 +20,14 @@
 	$whats_in_it = get_post_meta($id, 'products_whats_in_it', true);
 	$whats_not_in_it = get_post_meta($id, 'products_whats_not_in_it', true);
 	$directions = get_post_meta($id, 'products_directions', true);
-	$directions = get_post_meta($id, 'products_directions', true);
 	$ingredients = get_post_meta($id, 'products_ingredients', true);
+
+	$video_thumbnail = wp_get_attachment_image_src( get_post_meta($id, 'products_video_thumbnail', true), 'full' );
+	$video_thumbnailSrc = $video_thumbnail[0];
+	$video_embed = get_post_meta($id, 'products_video_embed', true);
+
+	$dual_feature = wp_get_attachment_image_src( get_post_meta($id, 'products_dual_feature', true), 'full' );
+	$dual_featureSrc = $dual_feature[0];
 
 ?>
 
@@ -26,13 +40,13 @@
 		<div class="container">
 			<div class="hold">
 				<div class="image">
-					<img src="<?php bloginfo('template_directory'); ?>/img/featured-image.jpg"/>
+					<img src="<?php echo $header_imgSrc; ?>"/>
 				</div>
 				<div class="productShot">
 					<img src="<?php bloginfo('template_directory'); ?>/img/product-shot.jpg"/>
-					<h1 class="title">product name</h1>
-					<h2 class="subTitle">some sub title here</h2>
-					<h3 class="description">Say something more about product</h3>
+					<h1 class="title"><?php the_title(); ?></h1>
+					<h2 class="subTitle"><?php echo $subtitle; ?></h2>
+					<h3 class="description"><?php echo $description; ?></h3>
 				</div>
 			</div>
 		</div>
@@ -47,21 +61,18 @@
 		<div class="container">
 			<h3 class="title">available in <span>x</span> shades</h3>
 			<ul>
-				<li>
-					<span class="colorName">dark blonde</span>
-					<span class="commonText">matches hair color:</span>
-					<img src="<?php bloginfo('template_directory'); ?>/img/dark-blonde.png"/>
-				</li>
-				<li>
-					<span class="colorName">dark blonde</span>
-					<span class="commonText">matches hair color:</span>
-					<img src="<?php bloginfo('template_directory'); ?>/img/dark-blonde.png"/>
-				</li>
-				<li>
-					<span class="colorName">dark blonde</span>
-					<span class="commonText">matches hair color:</span>
-					<img src="<?php bloginfo('template_directory'); ?>/img/dark-blonde.png"/>
-				</li>
+				<?php foreach($shades as $shade){ 
+
+					$shade_img = wp_get_attachment_image_src( $shade["image"], 'full' );
+					$shade_imgSrc = $shade_img[0];
+
+					?>
+					<li>
+						<span class="colorName"><?php echo $shade["name"]; ?></span>
+						<span class="commonText">matches hair color:</span>
+						<img src="<?php echo $shade_imgSrc; ?>"/>
+					</li>
+				<?php } ?>
 			</ul>
 		</div>
 	</div>
@@ -113,8 +124,8 @@
 
 	<div id="video">
 		<div class="container">
-			<div class="embed">
-				<img src="<?php bloginfo('template_directory'); ?>/img/video-thumb.jpg"/>
+			<div class="embed" data-id="<?php echo $video_embed; ?>">
+				<img src="<?php echo $video_thumbnailSrc; ?>"/>
 				<div class="play"></div>
 				<div class="hold"></div>
 			</div>
@@ -124,7 +135,7 @@
 	<div id="dualFeature">
 		<div class="container">
 			<div class="image">
-				<img src="<?php bloginfo('template_directory'); ?>/img/dual-feature.jpg"/>
+				<img src="<?php echo $dual_featureSrc; ?>"/>
 			</div>
 		</div>
 	</div>
@@ -140,8 +151,8 @@
 		if($('#video .embed').length){
 			$('#video .play').on('click', function(){
 				var el = $(this);
-				var hold = $(this).parent().find('.hold');
-				var videoId = '1eHG-7l0vXg';
+				var hold = el.parent().find('.hold');
+				var videoId = el.attr('data-id');
 				var iframe = '<iframe width="560" height="315" src="https://www.youtube.com/embed/'+videoId+'?wmode=transparent&amp;autoplay=1" frameborder="0" allowfullscreen></iframe>';
 				hold.append(iframe).fadeIn(300);
 			});

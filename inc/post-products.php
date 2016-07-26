@@ -48,7 +48,7 @@ function post_products() {
 				array(
 				    'label' => 'Product Description',
 				    'desc'  => 'Text appearing under the product subtitle.',
-				    'id'    => $prefix.'subtitle',			
+				    'id'    => $prefix.'description',			
 				    'type'  => 'text'
 				),
 				array(
@@ -126,7 +126,7 @@ function post_products() {
 				    'label' => 'Video Embed',
 				    'desc'  => 'Embed code for the product video.',
 				    'id'    => $prefix.'video_embed',
-				    'type'  => 'textarea'
+				    'type'  => 'text'
 				),
 				array(
 				    'label' => 'Dual Image Feature',
