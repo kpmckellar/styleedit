@@ -45,7 +45,7 @@
 
 						<li class="product">
 							
-							<img src="<?php bloginfo('template_directory'); ?>/img/product-shot-grad.jpg"/>
+							<img src="<?php bloginfo('template_directory'); ?>/img/lrg-prod.png"/>
 
 							<div class="rollover">
 								<div class="center">

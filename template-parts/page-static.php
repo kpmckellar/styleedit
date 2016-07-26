@@ -62,7 +62,7 @@
 
 			</div>
 
-			<?php if( is_page('find-a-salon') ){ ?>
+			<?php if( is_page('find-a-salon') && shortcode_exists( 'wpsl' )){ ?>
 				
 				<div id="locator">
 					
