@@ -177,7 +177,8 @@
 }
 
 .beforeafter {
-	margin-bottom: 40px;
+	max-width: 440px;
+	margin: 0 auto 40px auto;
 }
 
 .prod_img_before,
@@ -327,18 +328,13 @@
 		padding-right: 100px;
 	}
 
-	.beforeafter {
-		width: 440px;
-		margin-left: auto;
-		margin-right: auto;
-	}
-
 	.btn_salon {
 		width: 160px;
-		margin: 0 auto;
+		margin: 0 auto 50px auto;
 		height: 35px;
 		line-height: 35px;
 		font-size: 15px;
+
 	}
 
 	#wrapper_ingredients {
@@ -388,6 +384,25 @@
 		right: 16px;
 	}
 
+	#video {
+		margin-bottom: 60px;
+	}
+
+	.product #dualFeature .image {
+		display: block;
+	}
+
+	.product #dualFeature .image img {
+		max-width: 100%;	
+		margin: 0 auto;
+		display: block;
+	}
+
+	#details {
+		max-width: 960px;
+		margin: 0 auto;
+	}
+
 }
 @media only screen and (min-width: 1024px) {
 	.product #logo a {
@@ -400,9 +415,75 @@
 	}
 	.product #shades ul li {
 		margin: 0 35px;
+	}
 
-	#accordion {
+	.constrict {
+		width: 960px;
+		margin: 0 auto;
+	}
 
+	#details {
+		padding: 0;
+		margin-bottom: 80px;
+
+		-webkit-columns: 150px 2;
+		-moz-columns: 150px 2;
+		columns: 150px 2;
+		-webkit-column-gap: 50px;
+		-moz-column-gap: 50px;
+		column-gap: 50px;
+	}
+
+	.whatItDoes div {
+		margin-bottom: 25px;
+	}
+
+	.beforeafter {
+	    width: 200px;
+	    margin: 0;
+	    float: left;
+	    margin-right: 45px;
+	}
+
+	.prod_img_before,
+	.prod_img_after {
+		display: block;
+		width: 100%;
+		margin: 0;
+		padding: 0;
+	}
+
+	.prod_img_before {
+		margin-bottom: 32px;
+	}
+
+	#video {
+		margin-bottom: 80px;
+	}
+
+	#details .whatItDoes h3,
+	#details #accordion h3 {
+		margin-top: 0;
+		padding-top: 0;
+		-webkit-column-break-inside: avoid;
+		page-break-inside: avoid;
+		break-inside: avoid;
+	}
+
+	#accordion div {
+		padding-bottom: 25px;
+		-webkit-column-break-inside: avoid;
+		page-break-inside: avoid;
+		break-inside: avoid;
+	}
+
+	#ingredients_content {
+		top: 50%;
+		margin-top: 0;
+	}
+
+	.btn_salon {
+		margin: 0;
 	}
 }
 @media only screen and (min-width: 1025px) {
