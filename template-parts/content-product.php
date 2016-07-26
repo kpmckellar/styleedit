@@ -152,7 +152,7 @@
 			$('#video .play').on('click', function(){
 				var el = $(this);
 				var hold = el.parent().find('.hold');
-				var videoId = el.attr('data-id');
+				var videoId = el.parent().attr('data-id');
 				var iframe = '<iframe src="https://player.vimeo.com/video/'+videoId+'?wmode=transparent&amp;autoplay=1" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>';
 				hold.append(iframe).fadeIn(300);
 			});
