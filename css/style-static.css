@@ -71,6 +71,186 @@
 	margin: 0 auto;
 	padding-top: 60px;
 }
+/* Plugin Styles - START */
+#static.find-a-salon #locator #wpsl-wrap {
+	margin-bottom: 0;
+}
+#static.find-a-salon #locator .wpsl-search {
+	margin-bottom: 60px;
+	padding: 20px;
+	font-size: 0;
+	background-color: #faf9f9;
+}
+#static.find-a-salon #locator .wpsl-search label, 
+#static.find-a-salon #locator .wpsl-search input {
+	width: auto;
+	vertical-align: top;
+	float: none;	
+	margin: 0;
+	font-size: 1rem;
+	line-height: normal;
+	text-transform: uppercase;
+}
+#static.find-a-salon #locator .wpsl-search label {
+	line-height: 1rem;
+	padding-top: 14px;
+	display: inline-block;
+	display: block;
+	text-align: center;
+	padding-top: 0;
+	padding-bottom: 15px;
+}
+#static.find-a-salon #locator .wpsl-search input,
+#static.find-a-salon #locator .wpsl-search select,
+#static.find-a-salon #locator .wpsl-search .wpsl-dropdown .wpsl-selected-item {
+	vertical-align: top;
+	display: inline-block;
+	border: 1px solid #000;
+	border-radius: 0;	
+	width: auto;
+	box-shadow: none;
+	font-size: 1rem;
+}
+#static.find-a-salon #locator .wpsl-search div {
+	display: inline-block;
+	vertical-align: top;
+	float: none;
+	margin: 0;
+	width: auto;
+}
+#static.find-a-salon #locator #wpsl-search-wrap {
+	width: 100%;
+}
+#static.find-a-salon #locator .wpsl-search .wpsl-input,
+#static.find-a-salon #locator .wpsl-search .wpsl-select-wrap,
+#static.find-a-salon #locator .wpsl-search .wpsl-search-btn-wrap {
+	width: 39%;
+	margin-right: 2%;
+	text-align: left;
+}
+#static.find-a-salon #locator .wpsl-search .wpsl-input,
+#static.find-a-salon #locator .wpsl-search .wpsl-select-wrap {
+	width: 100%;
+	margin: 0;
+	margin-bottom: 20px;
+}
+#static.find-a-salon #locator .wpsl-search .wpsl-search-btn-wrap {
+	width: 18%;
+	margin-right: 0;
+	text-align: right;
+	width: 100%;
+}
+#static.find-a-salon #locator .wpsl-search .wpsl-input > div {
+	width: 52%;
+	width: 100%;
+}
+#static.find-a-salon #locator .wpsl-search #wpsl-search-input {
+	width: 48%;
+	height: 40px;
+	width: 100% !important;
+}
+#static.find-a-salon #locator .wpsl-search input {
+	width: 100%;
+	max-width: 160px;
+	max-width: 100%;
+	text-align: center;
+}
+#static.find-a-salon #locator .wpsl-search #wpsl-search-btn {
+	font-family: 'DIN Next W01 Regular', 'Helvetica Neue Thin', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+	font-size: 15px;
+	font-size: 20px;
+	line-height: normal;
+	font-weight: 400;
+	letter-spacing: 0.03em;
+	color: #fff;	
+	text-decoration: none;	
+	text-shadow: none;
+	max-width: 135px;
+	text-transform: uppercase !important;
+	display: inline-block;
+	padding: 10px 30px;
+	padding: 25px 30px;
+	margin: 0;
+	background: #000;
+	border: 1px solid #000;
+	max-width: 100%;
+}
+#static.find-a-salon #locator .wpsl-dropdown {
+	border: 0;
+	font-size: 1rem;
+}
+#static.find-a-salon #locator #wpsl-search-wrap .wpsl-dropdown div {
+	border: 1px solid #000;
+	left: 0;
+	right: 0;
+	border-top: 0;
+	border-radius: 0;
+}
+#static.find-a-salon #locator .wpsl-search .wpsl-select-wrap label {
+	width: 44%;
+	width: 100%;
+}
+#static.find-a-salon #locator .wpsl-search .wpsl-select-wrap .wpsl-dropdown,
+#static.find-a-salon #locator .wpsl-search select {
+	width: 46%;
+	margin-right: 10%;
+	width: 100% !important;
+}
+#static.find-a-salon #locator .wpsl-search select {
+	height: 40px;
+}
+#static.find-a-salon #locator .wpsl-search .wpsl-select-wrap .wpsl-selected-item,
+#static.find-a-salon #locator .wpsl-search .wpsl-select-wrap .wpsl-dropdown > div {
+	width: 100%;
+}
+#static.find-a-salon #locator .wpsl-search .wpsl-select-wrap #wpsl-radius,
+#static.find-a-salon #locator .wpsl-search .wpsl-select-wrap #wpsl-results {
+	width: 50%;
+}
+#static.find-a-salon #locator .wpsl-search .wpsl-select-wrap #wpsl-radius {
+	padding-right: 10px;
+}
+#static.find-a-salon #locator .wpsl-search .wpsl-select-wrap #wpsl-results {
+	padding-left: 10px;
+}
+#static.find-a-salon #locator .wpsl-dropdown .wpsl-selected-item, 
+#static.find-a-salon #locator .wpsl-dropdown li, 
+#static.find-a-salon #locator .wpsl-selected-item,
+#static.find-a-salon #locator .wpsl-search select {
+	padding: 10px 12px 8px !important;
+}
+/* --- Locations List --- */
+#wpsl-gmap {
+	margin: 0;	
+}
+#static.find-a-salon #locator .wpsl-store-below #wpsl-result-list {
+	margin-top: 0;
+}
+#static.find-a-salon #locator .wpsl-store-below #wpsl-result-list #wpsl-stores {
+	height: auto !important;
+}
+#wpsl-wrap.wpsl-store-below #wpsl-result-list li {
+	padding: 0 16px;
+	width: 33.33%;
+	margin-top: 60px;
+	border: 0;
+	font-size: 20px;
+	line-height: 24px;
+	width: 100%;
+}
+#wpsl-wrap.wpsl-store-below #wpsl-result-list li strong {
+	font-weight: 700;
+}
+#wpsl-wrap.wpsl-store-below #wpsl-result-list li p {
+	margin-bottom: 16px;
+}
+#wpsl-wrap.wpsl-store-below #wpsl-result-list li .wpsl-directions {
+	display: inline-block;
+	margin-left: 13px;
+	color: #ef229c;
+	text-transform: lowercase;
+}
+/* Plugin Styles - END */
 @media only screen and (min-width: 480px) {	
 	#static #logo a {
 		top: 50%;
@@ -150,6 +330,57 @@
 	#static.find-a-salon .copy a:hover {
 		text-decoration: underline;
 	}
+	/* Plugin Styles - START */
+	#static.find-a-salon #locator .wpsl-search {
+		padding: 30px 40px;
+	}
+	#static.find-a-salon #locator .wpsl-search .wpsl-input, 
+	#static.find-a-salon #locator .wpsl-search .wpsl-select-wrap, 
+	#static.find-a-salon #locator .wpsl-search .wpsl-search-btn-wrap {
+		margin-right: 6%;
+		width: 35%;
+		margin-bottom: 0;
+	}
+	#static.find-a-salon #locator .wpsl-search .wpsl-search-btn-wrap {
+		margin-right: 0;
+		width: 18%;
+	}
+	#static.find-a-salon #locator .wpsl-search .wpsl-select-wrap #wpsl-radius {
+		padding-right: 11%;
+	} 
+	#static.find-a-salon #locator .wpsl-search .wpsl-select-wrap #wpsl-results {
+		padding-left: 11%;
+	}
+	#static.find-a-salon #locator .wpsl-search #wpsl-search-btn {
+		max-width: 100%;
+		padding: 10px 30px;
+		max-width: 135px;
+		font-size: 15px;
+	}
+	#static.find-a-salon #locator .wpsl-search .wpsl-input > div {
+		width: 100%;
+	}
+	#static.find-a-salon #locator .wpsl-search .wpsl-select-wrap label,
+	#static.find-a-salon #locator .wpsl-search label {
+		display: block;
+		width: 100%;
+		padding: 0 0 20px;
+		text-align: center;
+	}
+	#static.find-a-salon #locator .wpsl-search .wpsl-select-wrap .wpsl-dropdown, 
+	#static.find-a-salon #locator .wpsl-search select,
+	#static.find-a-salon #locator .wpsl-search #wpsl-search-input {
+		width: 100%;
+		margin: 0;
+		text-align: center;
+		max-width: 100%;
+	}
+	#static.find-a-salon #locator .wpsl-search .wpsl-input, 
+	#static.find-a-salon #locator .wpsl-search .wpsl-select-wrap, 
+	#static.find-a-salon #locator .wpsl-search .wpsl-search-btn-wrap {
+		vertical-align: bottom;
+	}
+	/* Plugin Styles - END */
 }
 @media only screen and (min-width: 1024px) {
 	#static .billboard {
@@ -195,4 +426,162 @@
 		border-right: 1px solid #000;
 		min-width: 260px;
 	}
+	/* Plugin Styles - START */
+	#static.find-a-salon #locator #wpsl-wrap {
+		margin-bottom: 0;
+	}
+	#static.find-a-salon #locator .wpsl-search {
+		margin-bottom: 60px;
+		padding: 20px;
+		font-size: 0;
+		background-color: #faf9f9;
+	}
+	#static.find-a-salon #locator .wpsl-search label, 
+	#static.find-a-salon #locator .wpsl-search input {
+		width: auto;
+		vertical-align: top;
+		float: none;	
+		margin: 0;
+		font-size: 1rem;
+		line-height: normal;
+		text-transform: uppercase;
+	}
+	#static.find-a-salon #locator .wpsl-search label {
+		line-height: 1rem;
+		padding: 14px 0 0;
+		display: inline-block;
+	}
+	#static.find-a-salon #locator .wpsl-search input,
+	#static.find-a-salon #locator .wpsl-search select,
+	#static.find-a-salon #locator .wpsl-search .wpsl-dropdown .wpsl-selected-item {
+		vertical-align: top;
+		display: inline-block;
+		border: 1px solid #000;
+		border-radius: 0;	
+		width: auto;
+		box-shadow: none;
+		font-size: 1rem;
+	}
+	#static.find-a-salon #locator .wpsl-search div {
+		display: inline-block;
+		vertical-align: top;
+		float: none;
+		margin: 0;
+		width: auto;
+	}
+	#static.find-a-salon #locator #wpsl-search-wrap {
+		width: 100%;
+	}
+	#static.find-a-salon #locator .wpsl-search .wpsl-input,
+	#static.find-a-salon #locator .wpsl-search .wpsl-select-wrap,
+	#static.find-a-salon #locator .wpsl-search .wpsl-search-btn-wrap {
+		width: 39%;
+		margin-right: 2%;
+		text-align: left;
+		vertical-align: top;
+	}
+	#static.find-a-salon #locator .wpsl-search .wpsl-search-btn-wrap {
+		width: 18%;
+		margin-right: 0;
+		text-align: right;
+	}
+	#static.find-a-salon #locator .wpsl-search .wpsl-input > div {
+		width: 52%;
+	}
+	#static.find-a-salon #locator .wpsl-search #wpsl-search-input {
+		width: 48%;
+		height: 40px;
+		max-width: 160px;
+	}
+	#static.find-a-salon #locator .wpsl-search input {
+		width: 100%;
+		max-width: 160px;
+	}
+	#static.find-a-salon #locator .wpsl-search #wpsl-search-btn {
+		font-family: 'DIN Next W01 Regular', 'Helvetica Neue Thin', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+		font-size: 15px;
+		line-height: normal;
+		font-weight: 400;
+		letter-spacing: 0.03em;
+		color: #fff;	
+		text-decoration: none;	
+		text-shadow: none;
+		max-width: 135px;
+		text-transform: uppercase !important;
+		display: inline-block;
+		padding: 10px 30px;
+		margin: 0;
+		border: 1px solid #000;
+		background: #000;
+	}
+	#static.find-a-salon #locator .wpsl-dropdown {
+		border: 0;
+		font-size: 1rem;
+	}
+	#static.find-a-salon #locator #wpsl-search-wrap .wpsl-dropdown div {
+		border: 1px solid #000;
+		left: 0;
+		right: 0;
+		border-top: 0;
+		border-radius: 0;
+	}
+	#static.find-a-salon #locator .wpsl-search .wpsl-select-wrap label {
+		width: 44%;
+		display: inline-block;
+		padding: 14px 0 0;
+		text-align: left;
+	}
+	#static.find-a-salon #locator .wpsl-search .wpsl-select-wrap .wpsl-dropdown,
+	#static.find-a-salon #locator .wpsl-search select {
+		width: 46% !important;
+		margin-right: 10%;
+	}
+	#static.find-a-salon #locator .wpsl-search select {
+		height: 40px;
+	}
+	#static.find-a-salon #locator .wpsl-search .wpsl-select-wrap .wpsl-selected-item,
+	#static.find-a-salon #locator .wpsl-search .wpsl-select-wrap .wpsl-dropdown > div {
+		width: 100%;
+	}
+	#static.find-a-salon #locator .wpsl-search .wpsl-select-wrap #wpsl-radius,
+	#static.find-a-salon #locator .wpsl-search .wpsl-select-wrap #wpsl-results {
+		width: 50%;
+		padding-right: 0;
+		padding-left: 0;
+		text-align: left;
+	}
+	#static.find-a-salon #locator .wpsl-dropdown .wpsl-selected-item, 
+	#static.find-a-salon #locator .wpsl-dropdown li, 
+	#static.find-a-salon #locator .wpsl-selected-item,
+	#static.find-a-salon #locator .wpsl-search select {
+		padding: 10px 12px 8px !important;
+	}
+	/* --- Locations List --- */
+	#static.find-a-salon #locator .wpsl-store-below #wpsl-result-list {
+		margin-top: 0;
+	}
+	#static.find-a-salon #locator .wpsl-store-below #wpsl-result-list #wpsl-stores {
+		height: auto !important;
+	}
+	#wpsl-wrap.wpsl-store-below #wpsl-result-list li {
+		padding: 0 16px;
+		width: 33.33%;
+		margin-top: 60px;
+		border: 0;
+		font-size: 20px;
+		line-height: 24px;
+	}
+	#wpsl-wrap.wpsl-store-below #wpsl-result-list li strong {
+		font-weight: 700;
+	}
+	#wpsl-wrap.wpsl-store-below #wpsl-result-list li p {
+		margin-bottom: 16px;
+	}
+	#wpsl-wrap.wpsl-store-below #wpsl-result-list li .wpsl-directions {
+		display: inline-block;
+		margin-left: 13px;
+		color: #ef229c;
+		text-transform: lowercase;
+	}
+	/* Plugin Styles - END */
 }

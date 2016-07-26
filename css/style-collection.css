@@ -41,6 +41,9 @@
 	vertical-align: top;
 	width: 100%;
 	border-bottom: 1px solid #fff;
+	background-image: url(../img/product-grad.png);
+	background-position: center;
+	background-size: cover;	
 }
 #collection .group ul li.spacer {
 	display: none;
