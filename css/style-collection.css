@@ -1,5 +1,11 @@
 /* Collection page styles */
 
+.main_navigation .menu-item a {
+	color: #000;
+}
+.main_navigation .menu-item a:hover {
+	border-color: #000;
+}
 #collection .billboard {
 	position: relative;
 	height: 350px;
@@ -17,49 +23,142 @@
 	overflow: hidden;
 	z-index: 2;
 }
-#collection .copy {
-	padding-top: 48px;
-	padding-left: 40px;
-	padding-right: 40px;
+#collection .group {
+	position: relative;	
+	margin: 0 auto;
+	padding: 0;
+	max-width: 320px;
 }
-#collection .copy .heading {
-	margin-top: 0;
-	margin-bottom: 32px;
-	font-weight: normal;
+#collection .group ul {
+	padding: 0;
+	margin: 0;
+	font-size: 0;
+	list-style: none;
 }
-#collection .copy p {
-	margin-top: 0;
-	margin-bottom: 32px;	
+#collection .group ul li {
+	position: relative;
+	display: inline-block;
+	vertical-align: top;
+	width: 100%;
+	border-bottom: 1px solid #fff;
 }
-#collection .copy p:last-child {
-	margin-bottom: 0;
+#collection .group ul li.spacer {
+	display: none;
+}
+#collection .group ul li .overlay {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: url(../img/transparent-logo-mobile.png) center no-repeat;
+	background-size: auto 100%;
+}
+#collection .group li .rollover {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	text-align: center;
+	border: 1px solid #fff;
+	background-color: rgba(243,243,243,0.78);
+	visibility: hidden;
+}
+#collection .group li:hover .rollover {
+	visibility: visible;
+}
+#collection .group li .rollover .title,
+#collection .group li .rollover .subTitle {
+	font-weight: 400;
+	line-height: 24px;
+	color: #000;
+	margin: 0;
+}
+#collection .group li .rollover .title {
+	font-size: 23px;	
+	letter-spacing: 0.05em;	
+	text-transform: lowercase;	
+}
+#collection .group li .rollover .title a,
+#collection .group li .rollover .subTitle a {
+	text-decoration: none;
+	color: #000;	
+}
+#collection .group li .rollover .subTitle {
+	font-size: 11px;
+	letter-spacing: 0.01em;
+	text-transform: uppercase;
+}
+#collection .group li .rollover .center {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	display: inline-table;
+}
+#collection .group li .rollover .center .cell {
+	display: table-cell;
+	vertical-align: middle;
+}
+#collection .group li .rollover .enter {
+	position: absolute;
+	bottom: 30px;
+	left: 0;
+	width: 100%;
+}
+#collection .group li .rollover .enter a {
+	font-size: 11px;
+	line-height: 17px;
+	letter-spacing: 0.025em;
+	text-decoration: none;
+	color: #010101;
+}
+#collection .group li .rollover .enter a:hover {
+	text-decoration: underline;
 }
 
 @media only screen and (min-width: 480px) {
-	#collection #logo a {
-		top: 50%;
-		left: 45px;
-		width: 93px;
-		height: 134px;
-		margin-top: -67px;
-		background-image: url(../img/logo-desktop.png);
-		background-size: inherit;
-	}
+	
 }
 @media only screen and (min-width: 768px) {
-	#collection .billboard {
-		height: 400px;
+	#collection {
+		padding-top: 80px;
 	}
-	#collection .copy {
-		max-width: 960px;
-		margin: 0 auto;		
+	#collection .group {
+		max-width: 640px;
+	}
+	#collection .group ul li {
+		width: 50%;
+		border-bottom: 0px;
+	}
+	#collection .group ul li.spacer {
+		display: inline-block;
 	}
 }
 @media only screen and (min-width: 1024px) {
-	#collection .billboard {
-		height: 543px;
-	}	
-	#collection .copy p:last-child {
-		margin-bottom: 32px;
+	#collection #logo a {
+		top: 36%;
+		left: 45px;
+		width: 85px;
+		height: 126px;
+		margin-top: -63px;
+		background-image: url(../img/logo-desktop-black.png);
+		background-size: inherit;
+	}
+	#collection .group {
+		max-width: 680px;
+	}
+	#collection .group ul li {
+		width: 33.33%;
+	}
+	#collection .group ul li.spacer {
+		display: none;
+	}
+}
+@media only screen and (min-width: 1025px) {
+	#collection .group {
+		max-width: 960px;		
 	}
 }

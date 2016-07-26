@@ -66,6 +66,11 @@
 	float: none;
 	max-width: 170px;
 }
+#static.find-a-salon #locator {
+	max-width: 960px;
+	margin: 0 auto;
+	padding-top: 60px;
+}
 @media only screen and (min-width: 480px) {	
 	#static #logo a {
 		top: 50%;
