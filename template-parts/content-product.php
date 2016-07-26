@@ -120,7 +120,7 @@
 
 			</div>
 
-			<a href="../../find-a-salon" class="btn_salon">Find a Salon</a>
+			<a href="find-a-salon" class="btn_salon">Find a Salon</a>
 		</div>
 	</div>
 

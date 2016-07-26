@@ -39,13 +39,16 @@
 						
 						if ( $queue_product->have_posts() ) :
 							while ( $queue_product->have_posts() ) : $queue_product->the_post(); 
-								$id = get_the_ID();				
+								$id = get_the_ID();
+								$featured_img = wp_get_attachment_image_src( get_post_thumbnail_id($id), 'full' );
+								$featured_imgSrc = $featured_img[0];
+								$subtitle = get_post_meta($id, 'products_subtitle', true);
 
 					?>
 
 						<li class="product">
 							
-							<img src="<?php bloginfo('template_directory'); ?>/img/lrg-prod.png"/>
+							<img src="<?php echo $featured_imgSrc; ?>"/>
 
 							<div class="rollover">
 								<div class="center">
@@ -54,7 +57,7 @@
 											<a href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
 										</h1>
 										<h2 class="subTitle">
-											<a href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
+											<a href="<?php the_permalink(); ?>"><?php echo $subtitle; ?></a>
 										</h2>
 									</div>
 								</div>

@@ -254,7 +254,8 @@
 	font-size: 20px;
 }
 
-.btn_salon:hover {
+.btn_salon:hover,
+.btn_salon:visited {
 	color: #fff;
 }
 
