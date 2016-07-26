@@ -185,6 +185,12 @@ function post_page_meta($current_screen){
 			    'desc'  => 'The image tht will be displayed on mobile devices.',
 			    'id'    => $prefix.'mobile_img',
 			    'type'  => 'image'
+			),
+			array(
+			    'label' => 'Enable Store Locator',
+			    'desc'  => 'Checking this will enable the store locator.',
+			    'id'    => $prefix.'enable_locator',
+			    'type'  => 'checkbox'
 			)
 		);
 		$page_box = new custom_add_meta_box( 'page_box', 'Page Options', $fields, 'page', true );

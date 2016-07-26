@@ -24,6 +24,8 @@
 			$mobile_img = wp_get_attachment_image_src( get_post_meta($id, 'page_mobile_img', true), 'full' );
 			$mobile_imgSrc = $mobile_img[0];
 
+			$page_enable_locator = get_post_meta($id, 'page_enable_locator', true);
+
 	?>
 
 		<section id="static" class="<?php echo $post->post_name;?>">
@@ -66,7 +68,9 @@
 				
 				<div id="locator">
 					
-					<?php echo do_shortcode('[wpsl]'); ?>
+					<?php if($page_enable_locator === on || $page_enable_locator === true){ 
+						echo do_shortcode('[wpsl]'); 
+					} ?>
 
 				</div>
 
