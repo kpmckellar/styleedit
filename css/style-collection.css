@@ -192,7 +192,7 @@
 	}
 	#collection .group li .rollover {		
 		background-color: rgba(243,243,243,0.78);
-		visibility: hidden;
+		visibility: visible;
 	}
 	#collection .group li:hover .rollover {
 		visibility: visible;
