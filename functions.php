@@ -237,3 +237,11 @@ function post_page_meta($current_screen){
 	}
 }
 add_action( 'current_screen', 'post_page_meta' );
+
+// pre function
+function pre($var){
+	echo '<pre>';
+		print_r($var);
+	echo '</pre>';
+	return true;
+}
