@@ -32,7 +32,7 @@
 					</li>
 					<?php
 
-						$product_arguments = array( 'post_type' => 'products', 'orderby' => 'date', 'order' => 'DESC', 'posts_per_page' => -1 );
+						$product_arguments = array( 'post_type' => 'products', 'orderby' => 'date', 'order' => 'ASC', 'posts_per_page' => -1 );
 						$queue_product = new WP_Query( $product_arguments );
 						
 						if ( $queue_product->have_posts() ) :
