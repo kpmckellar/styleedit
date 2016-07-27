@@ -47,14 +47,21 @@
 	background-size: 100%;	
 }
 #collection .group ul li img {
-	// -webkit-transform: translateY(-30px);
-	//    -moz-transform: translateY(-30px);
-	//     -ms-transform: translateY(-30px);
-	//      -o-transform: translateY(-30px);
-	//         transform: translateY(-30px);
+	-webkit-transform: translateY(-12%);
+	   -moz-transform: translateY(-12%);
+	    -ms-transform: translateY(-12%);
+	     -o-transform: translateY(-12%);
+	        transform: translateY(-12%);
 }
 #collection .group ul li.spacer {
-	display: none;
+	display: none;	
+}
+#collection .group ul li.spacer img {
+	-webkit-transform: translateY(0);
+	   -moz-transform: translateY(0);
+	    -ms-transform: translateY(0);
+	     -o-transform: translateY(0);
+	        transform: translateY(0);
 }
 #collection .group ul li .overlay {
 	position: absolute;
@@ -72,7 +79,7 @@
 	width: 100%;
 	height: 100%;
 	text-align: center;
-	border: 1px solid #fff;
+	border: 0px solid #fff;
 	background-color: rgba(243,243,243,0.78);
 	visibility: hidden;
 }
@@ -129,6 +136,18 @@
 #collection .group li .rollover .enter a:hover {
 	text-decoration: underline;
 }
+#collection .group li .rollover {		
+	visibility: visible;
+	background-color: transparent;
+}
+#collection .group li .rollover .center {
+	height: auto;
+	bottom: 40px;
+	top: auto;
+}
+#collection .group li .rollover .enter {
+	bottom: 20px;
+}
 
 @media only screen and (min-width: 480px) {
 	
@@ -138,12 +157,12 @@
 		padding-top: 80px;
 	}
 	#collection .group {
-		max-width: 640px;
+		max-width: 100%;
 	}
 	#collection .group ul li {
 		width: 50%;
 		// border-bottom: 0px;
-	}
+	}	
 	#collection .group ul li.spacer {
 		display: inline-block;
 	}
@@ -164,6 +183,25 @@
 	#collection .group ul li {
 		width: 33.33%;
 	}
+	#collection .group ul li img {
+		-webkit-transform: translateY(0);
+		   -moz-transform: translateY(0);
+		    -ms-transform: translateY(0);
+		     -o-transform: translateY(0);
+		        transform: translateY(0);
+	}
+	#collection .group li .rollover {		
+		background-color: rgba(243,243,243,0.78);
+		visibility: hidden;
+	}
+	#collection .group li:hover .rollover {
+		visibility: visible;
+	}
+	#collection .group li .rollover .center {		
+		top: 0;
+		bottom: auto;
+		height: 100%;
+	}
 	#collection .group ul li.spacer {
 		display: none;
 	}
@@ -171,5 +209,5 @@
 @media only screen and (min-width: 1025px) {
 	#collection .group {
 		max-width: 960px;		
-	}
+	}	
 }
