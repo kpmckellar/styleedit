@@ -8,7 +8,7 @@
 	$header_imgSrc = $header_img[0];
 	$featured_img = wp_get_attachment_image_src( get_post_thumbnail_id($id), 'full' );
 	$featured_imgSrc = $featured_img[0];
-	$subtitle = get_post_meta($id, 'products_subtitle', true);
+	$category = get_post_meta($id, 'products_category', true);
 	$description = get_post_meta($id, 'products_description', true);
 
 	$shades = get_post_meta($id, 'products_shades', true);
@@ -43,8 +43,8 @@
 				</div>
 				<div class="productShot">
 					<img src="<?php echo $featured_imgSrc; ?>"/>
-					<h1 class="title"><?php the_title(); ?></h1>
-					<h2 class="subTitle"><?php echo $subtitle; ?></h2>
+					<h1 class="title"><?php echo $category; ?></h1>
+					<h2 class="subTitle"><?php the_title(); ?></h2>
 					<h3 class="description"><?php echo $description; ?></h3>
 				</div>
 			</div>

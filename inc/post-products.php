@@ -40,9 +40,9 @@ function post_products() {
 				    'type'  => 'image'
 				),
 				array(
-				    'label' => 'Product Subtitle',
+				    'label' => 'Product Category',
 				    'desc'  => 'Text appearing under the product title.',
-				    'id'    => $prefix.'subtitle',			
+				    'id'    => $prefix.'category',			
 				    'type'  => 'text'
 				),
 				array(

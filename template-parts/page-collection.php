@@ -40,7 +40,7 @@
 								$id = get_the_ID();
 								$featured_img = wp_get_attachment_image_src( get_post_thumbnail_id($id), 'full' );
 								$featured_imgSrc = $featured_img[0];
-								$subtitle = get_post_meta($id, 'products_subtitle', true);
+								$category = get_post_meta($id, 'products_category', true);
 
 					?>
 
@@ -52,10 +52,10 @@
 								<div class="center">
 									<div class="cell">
 										<h1 class="title">
-											<a href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
+											<a href="<?php the_permalink(); ?>"><?php echo $category; ?></a>
 										</h1>
 										<h2 class="subTitle">
-											<a href="<?php the_permalink(); ?>"><?php echo $subtitle; ?></a>
+											<a href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
 										</h2>
 									</div>
 								</div>
