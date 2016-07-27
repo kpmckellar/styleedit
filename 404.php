@@ -2,9 +2,7 @@
 	
 	get_header(); 
 
-?>	
-
-	<link href="<?php bloginfo('template_directory'); ?>/css/style-404.css" rel="stylesheet" type="text/css">
+?>
 
 	<section class="error-404 not-found">
 

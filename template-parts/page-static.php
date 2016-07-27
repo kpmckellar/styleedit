@@ -7,8 +7,6 @@
 ?>
 
 	<!-- Page content START -->
-	
-	<link href="<?php bloginfo('template_directory'); ?>/css/style-static.css" rel="stylesheet" type="text/css">
 
 	<?php
 		

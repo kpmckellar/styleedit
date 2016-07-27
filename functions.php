@@ -102,14 +102,52 @@ add_action( 'widgets_init', 'styleedit_widgets_init' );
  * Enqueue scripts and styles.
  */
 function styleedit_scripts() {
+	// template URI
+	$templateURI = get_template_directory_uri();
+
+	// load wordpress defaults
 	wp_enqueue_style( 'styleedit-style', get_stylesheet_uri() );
-
 	wp_enqueue_script( 'styleedit-navigation', get_template_directory_uri() . '/js/navigation.js', array(), '20151215', true );
-
 	wp_enqueue_script( 'styleedit-skip-link-focus-fix', get_template_directory_uri() . '/js/skip-link-focus-fix.js', array(), '20151215', true );
-
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
 		wp_enqueue_script( 'comment-reply' );
+	}		
+
+	// load global
+	wp_enqueue_script( 'styleedit-scripts-global', $templateURI . '/js/global-scripts.js', array('jquery'), '1.0', true );	
+	// load owl carousel on home and products single page
+	if(is_home() || is_singular('products')){
+		wp_enqueue_style( 'styleedit-owl-styles', $templateURI . '/js/owl-carousel/owl.carousel.css' );
+		wp_enqueue_style( 'styleedit-owl-theme', $templateURI . '/js/owl-carousel/owl.theme.css' );	
+		wp_enqueue_script( 'styleedit-owl-scripts', $templateURI . '/js/owl-carousel/owl.carousel.min.js', array('jquery'), '1.0', true );
+	}
+
+	// load homepage
+	if(is_home()){
+		wp_enqueue_style( 'styleedit-styles-home', $templateURI . '/css/style-home.css' );
+		wp_enqueue_script( 'styleedit-scripts-home', $templateURI . '/js/home-scripts.js', array('jquery'), '1.0', true );
+	}
+
+	// load static
+	if(is_page_template('template-parts/page-static.php')){
+		wp_enqueue_style( 'styleedit-styles-static', $templateURI . '/css/style-static.css' );		
+	}
+
+	// load collections
+	if(is_page_template('template-parts/page-collection.php')){
+		wp_enqueue_style( 'styleedit-styles-collection', $templateURI . '/css/style-collection.css' );		
+	}
+
+	// load single product
+	if(is_singular('products')){
+		wp_enqueue_style( 'styleedit-styles-product', $templateURI . '/css/style-product.css' );
+		wp_enqueue_script( 'styleedit-scripts-ui', '//code.jquery.com/ui/1.12.0/jquery-ui.js', array('jquery'), '1.0', true );		
+		wp_enqueue_script( 'styleedit-scripts-product', $templateURI . '/js/product-scripts.js', array('jquery'), '1.0', true );		
+	}
+
+	// load 404 error
+	if(is_404()){
+		wp_enqueue_style( 'styleedit-styles-product', $templateURI . '/css/style-404.css' );		
 	}
 }
 add_action( 'wp_enqueue_scripts', 'styleedit_scripts' );

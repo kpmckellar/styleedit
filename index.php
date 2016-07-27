@@ -6,9 +6,6 @@
 
 	<!-- Homepage slider START -->
 
-	<!-- Homepage styles -->
-	<link href="<?php bloginfo('template_directory'); ?>/css/style-home.css" rel="stylesheet" type="text/css">
-
 	<section id="homeSlider">
 		
 		<ul>
@@ -86,32 +83,6 @@
 		</div>
 
 	</section>
-
-	<!-- Owl Carousel -->
-	<link href="<?php bloginfo('template_directory'); ?>/js/owl-carousel/owl.carousel.css" rel="stylesheet" type="text/css">
-	<link href="<?php bloginfo('template_directory'); ?>/js/owl-carousel/owl.theme.css" rel="stylesheet" type="text/css">
-	<script src="<?php bloginfo('template_directory'); ?>/js/owl-carousel/owl.carousel.min.js" type="text/javascript"></script>
-	<script type="text/javascript">
-		(function($){
-			if($('#homeSlider ul li').length > 1){
-				$('#homeSlider ul').owlCarousel({
-					items:1,			    
-				    margin:0,
-				    loop:true,
-				    nav:false,				    
-				    autoplayTimeout:4000,
-				    responsive:{
-				    	0:{
-				    		autoplay:false
-				    	},
-				    	768:{
-				    		autoplay:true
-				    	}
-				    }
-				});
-			}
-		})(jQuery);		
-	</script>
 
 	<!-- Homepage slider END -->
 
