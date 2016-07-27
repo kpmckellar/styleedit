@@ -56,34 +56,39 @@
 		</div>
 	</div>
 
-	<div id="shades">
-		<div class="container">
-			<h3 class="title"><?php echo __('available in <span>x</span> shades','styleedit'); ?></h3>
-			<ul>
-				<?php foreach($shades as $shade){ 
 
-					$shade_img = wp_get_attachment_image_src( $shade["image"], 'full' );
-					$shade_imgSrc = $shade_img[0];
+	<?php if ($shades[0]["name"] != null) { ?>
+		<div id="shades">
+			<div class="container">
+				<h3 class="title"><?php echo __('available in <span>x</span> shades','styleedit'); ?></h3>
+				<ul>
+					<?php foreach($shades as $shade){ 
 
-					?>
-					<li>
-						<span class="colorName"><?php echo $shade["name"]; ?></span>
-						<span class="commonText"><?php echo __('matches hair color:','styleedit'); ?></span>
-						<img src="<?php echo $shade_imgSrc; ?>"/>
-					</li>
-				<?php } ?>
-			</ul>
+						$shade_img = wp_get_attachment_image_src( $shade["image"], 'full' );
+						$shade_imgSrc = $shade_img[0];
+
+						?>
+						<li>
+							<span class="colorName"><?php echo $shade["name"]; ?></span>
+							<span class="commonText"><?php echo __('matches hair color:','styleedit'); ?></span>
+							<img src="<?php echo $shade_imgSrc; ?>"/>
+						</li>
+					<?php } ?>
+				</ul>
+			</div>
 		</div>
-	</div>
-	
+	<?php } ?>
 	<div class="container clearfix">
-		<div class="beforeafter">
-			<figure class="prod_img_before">
-				<img src="<?php echo $before_imgSrc; ?>" />
-			</figure><figure class="prod_img_after">
-				<img src="<?php echo $after_imgSrc; ?>" />
-			</figure>
-		</div>
+		
+		<?php if ($before_imgSrc) { ?>
+			<div class="beforeafter">
+				<figure class="prod_img_before">
+					<img src="<?php echo $before_imgSrc; ?>" />
+				</figure><figure class="prod_img_after">
+					<img src="<?php echo $after_imgSrc; ?>" />
+				</figure>
+			</div>
+		<?php } ?>
 		<div id="details">
 			<div class="whatItDoes">
 				<h3><?php echo __('what it does','styleedit'); ?></h3>
@@ -123,16 +128,18 @@
 			<a href="find-a-salon" class="btn_salon"><?php echo __('Find a Salon','styleedit'); ?></a>
 		</div>
 	</div>
-
-	<div id="video">
-		<div class="container">
-			<div class="embed" data-id="<?php echo $video_embed; ?>">
-				<img src="<?php echo $video_thumbnailSrc; ?>"/>
-				<div class="play"></div>
-				<div class="hold"></div>
+	
+	<?php if ($video_thumbnailSrc) { ?>
+		<div id="video">
+			<div class="container">
+				<div class="embed" data-id="<?php echo $video_embed; ?>">
+					<img src="<?php echo $video_thumbnailSrc; ?>"/>
+					<div class="play"></div>
+					<div class="hold"></div>
+				</div>
 			</div>
 		</div>
-	</div>
+	<?php } ?>
 
 	<div id="dualFeature">
 		<div class="container">
