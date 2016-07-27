@@ -1,0 +1,76 @@
+/* About page styles */
+
+.error-404 .billboard {
+	position: relative;
+	height: 350px;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-color: #000;
+	background-size: cover;
+}
+.error-404 #logo h1 {
+	margin: 0;
+}
+.error-404 #logo a {
+	position: absolute;
+	text-indent: -999em;
+	overflow: hidden;
+	z-index: 2;
+}
+.error-404 .copy {
+	text-align: center;
+	padding-top: 48px;
+	padding-left: 40px;
+	padding-right: 40px;
+}
+.error-404 .copy .heading {
+	margin-top: 0;
+	margin-bottom: 32px;
+	font-weight: normal;
+}
+
+.error-404 .copy p {
+	margin-top: 0;
+	margin-bottom: 32px;	
+}
+
+@media only screen and (min-width: 480px) {	
+	.error-404 #logo a {
+		top: 50%;
+		left: 45px;
+		width: 93px;
+		height: 134px;
+		margin-top: -67px;
+		background-image: url(../img/logo-desktop.png);
+		background-size: inherit;
+	}
+}
+@media only screen and (min-width: 768px) {
+	.error-404 .billboard {
+		height: 400px;
+	}
+	.error-404.find-a-salon .billboard {
+		display: block;
+	}		
+	.error-404 .copy {
+		max-width: 960px;
+		margin: 0 auto;
+	}	
+}
+@media only screen and (min-width: 1024px) {
+	.error-404 .billboard {
+		height: 543px;
+	}
+	.error-404.find-a-salon .billboard {
+		display: block;
+	}	
+	.error-404 .copy .heading {	
+		-webkit-column-span: all;
+		-moz-column-span: all;
+		column-span: all;
+	}
+	.error-404 .copy {
+		max-width: 960px;
+		margin: 0 auto;
+	}
+}

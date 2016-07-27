@@ -53,6 +53,11 @@
 							background-image: url(<?php echo $desktop_imgSrc; ?>);
 						}	
 					}
+					@media only screen and (max-width: 1024px) and (orientation: landscape) {
+						.slide<?php echo $id; ?> {
+							background-image: url(<?php echo $desktop_imgSrc; ?>);
+						}	
+					}
 				</style>	
 			
 				<div class="text">
