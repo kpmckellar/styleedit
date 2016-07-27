@@ -262,6 +262,7 @@
 #ingredients_open,
 #ingredients_close {
 	display: none;
+	cursor: pointer;
 }
 
 @media only screen and (min-width: 480px) {

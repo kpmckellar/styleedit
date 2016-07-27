@@ -114,18 +114,20 @@ function styleedit_scripts() {
 	}		
 
 	// load global
-	wp_enqueue_script( 'styleedit-scripts-global', $templateURI . '/js/global-scripts.js', array('jquery'), '1.0', true );	
+	wp_enqueue_script( 'styleedit-scripts-global', $templateURI . '/js/global-scripts.js', array(), '1.0', true );	
+	wp_enqueue_script( 'styleedit-scripts-jquery', '//ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js', array(), '2.2.4', true );
+
 	// load owl carousel on home and products single page
 	if(is_home() || is_singular('products')){
 		wp_enqueue_style( 'styleedit-owl-styles', $templateURI . '/js/owl-carousel/owl.carousel.css' );
 		wp_enqueue_style( 'styleedit-owl-theme', $templateURI . '/js/owl-carousel/owl.theme.css' );	
-		wp_enqueue_script( 'styleedit-owl-scripts', $templateURI . '/js/owl-carousel/owl.carousel.min.js', array('jquery'), '1.0', true );
+		wp_enqueue_script( 'styleedit-owl-scripts', $templateURI . '/js/owl-carousel/owl.carousel.min.js', array(), '1.0', true );
 	}
 
 	// load homepage
 	if(is_home()){
 		wp_enqueue_style( 'styleedit-styles-home', $templateURI . '/css/style-home.css' );
-		wp_enqueue_script( 'styleedit-scripts-home', $templateURI . '/js/home-scripts.js', array('jquery'), '1.0', true );
+		wp_enqueue_script( 'styleedit-scripts-home', $templateURI . '/js/home-scripts.js', array(), '1.0', true );
 	}
 
 	// load static
@@ -141,8 +143,8 @@ function styleedit_scripts() {
 	// load single product
 	if(is_singular('products')){
 		wp_enqueue_style( 'styleedit-styles-product', $templateURI . '/css/style-product.css' );
-		wp_enqueue_script( 'styleedit-scripts-ui', '//code.jquery.com/ui/1.12.0/jquery-ui.js', array('jquery'), '1.0', true );		
-		wp_enqueue_script( 'styleedit-scripts-product', $templateURI . '/js/product-scripts.js', array('jquery'), '1.0', true );		
+		wp_enqueue_script( 'styleedit-scripts-ui', '//ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js', array(), '1.0', true );
+		wp_enqueue_script( 'styleedit-scripts-product', $templateURI . '/js/product-scripts.js', array(), '1.0', true );		
 	}
 
 	// load 404 error
