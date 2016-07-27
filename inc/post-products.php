@@ -41,7 +41,7 @@ function post_products() {
 				),
 				array(
 				    'label' => 'Product Category',
-				    'desc'  => 'Text appearing under the product title.',
+				    'desc'  => 'Text appearing above the product title.',
 				    'id'    => $prefix.'category',			
 				    'type'  => 'text'
 				),
