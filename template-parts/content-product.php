@@ -54,14 +54,14 @@
 		</div>
 		<div id="logo">
 			<h1>
-				<a href="<?php echo esc_url( home_url( '/' ) ); ?>">Style Edit</a>
+				<a href="<?php echo esc_url( home_url( '/' ) ); ?>"><?php bloginfo('name'); ?></a>
 			</h1>
 		</div>
 	</div>
 
 	<div id="shades">
 		<div class="container">
-			<h3 class="title">available in <span>x</span> shades</h3>
+			<h3 class="title"><?php echo __('available in <span>x</span> shades','styleedit'); ?></h3>
 			<ul>
 				<?php foreach($shades as $shade){ 
 
@@ -71,7 +71,7 @@
 					?>
 					<li>
 						<span class="colorName"><?php echo $shade["name"]; ?></span>
-						<span class="commonText">matches hair color:</span>
+						<span class="commonText"><?php echo __('matches hair color:','styleedit'); ?></span>
 						<img src="<?php echo $shade_imgSrc; ?>"/>
 					</li>
 				<?php } ?>
@@ -89,7 +89,7 @@
 		</div>
 		<div id="details">
 			<div class="whatItDoes">
-				<h3>what it does</h3>
+				<h3><?php echo __('what it does','styleedit'); ?></h3>
 				<div>
 					<p><?php echo $what_it_does; ?></p>
 				</div>
@@ -97,22 +97,25 @@
 			
 			<div id="accordion">
 				
-					<h3>what’s in it</h3>
+					<h3><?php echo __('what’s in it','styleedit'); ?></h3>
 					<div>
 						<p><?php echo $whats_in_it; ?></p>
 					</div>
 					
-					<h3>what’s NOT in it</h3>
+					<h3><?php echo __('what’s NOT in it','styleedit'); ?></h3>
 					<div>
 						<p><?php echo $whats_not_in_it; ?></p>
 					</div>
 
-					<h3>directions</h3>
+					<h3><?php echo __('directions','styleedit'); ?></h3>
 					<div>
 						<p><?php echo $directions; ?></p>
 					</div>
 
-				<div id="wrapper_ingredients"><h3 id="ingredients_header">ingredients</h3><img src="<?php bloginfo('template_directory'); ?>/img/ingredients_open.png" id="ingredients_open" /></div>
+				<div id="wrapper_ingredients">
+					<h3 id="ingredients_header"><?php echo __('ingredients','styleedit'); ?></h3>
+					<img src="<?php bloginfo('template_directory'); ?>/img/ingredients_open.png" id="ingredients_open" />
+				</div>
 				<div id="ingredients_content">
 					<img src="<?php bloginfo('template_directory'); ?>/img/ingredients_close.png" id="ingredients_close" />
 					<p><?php echo $ingredients; ?></p>
@@ -120,7 +123,7 @@
 
 			</div>
 
-			<a href="find-a-salon" class="btn_salon">Find a Salon</a>
+			<a href="find-a-salon" class="btn_salon"><?php echo __('Find a Salon','styleedit'); ?></a>
 		</div>
 	</div>
 
@@ -148,27 +151,37 @@
 <link href="<?php bloginfo('template_directory'); ?>/js/owl-carousel/owl.carousel.css" rel="stylesheet" type="text/css">
 <link href="<?php bloginfo('template_directory'); ?>/js/owl-carousel/owl.theme.css" rel="stylesheet" type="text/css">
 <script src="<?php bloginfo('template_directory'); ?>/js/owl-carousel/owl.carousel.min.js" type="text/javascript"></script>
+
+<!-- scripts -->
 <script type="text/javascript">
 	(function($){
+
+		// video embed
 		if($('#video .embed').length){
 			$('#video .play').on('click', function(){
-				var el = $(this);
-				var hold = el.parent().find('.hold');
-				var videoId = el.parent().attr('data-id');
-				var iframe = '<iframe src="https://player.vimeo.com/video/'+videoId+'?wmode=transparent&amp;autoplay=1" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>';
+				var el = $(this),
+					hold = el.parent().find('.hold'),
+					videoId = el.parent().attr('data-id'),
+					iframe = '<iframe src="https://player.vimeo.com/video/'+videoId+'?wmode=transparent&amp;autoplay=1" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>';
 				hold.append(iframe).fadeIn(300);
 			});
 		}
+
+		// shades slider
 		if($('#shades ul li').length > 1){
+
+			// populte shade count to string
 			$('#shades .title span').text($('#shades ul li').length);
-			var width = $(window).width();
-			var settings = {
-				items:1,
-			    margin:0,
-			    loop:true,
-			    nav:true
-			}			
-			var slider = $('#shades ul');
+			
+			var width = $(window).width(),
+				settings = {
+					items:1,
+				    margin:0,
+				    loop:true,
+				    nav:true
+				},
+				slider = $('#shades ul');
+
 			slider.owlCarousel(settings);
 
 			swap(width, slider);
@@ -181,41 +194,37 @@
 				}
 			}
 		}
-	})(jQuery);
-</script>
 
-		<!-- accordion functionality KM -->
-		<script>
-		var accordionSelector = $("#accordion")
-		var windowSize = $(window).width();
-		
+		// accordion functionality KM
+		var accordionSelector = $("#accordion"),
+			windowSize = $(window).width();
+
 		accordionSelector.accordion({
 			collapsible: true,
 			heightStyle: "content"
 		});
 
 		if (windowSize > 586) {
-	    	accordionSelector.accordion( "destroy" );
-	    }
+			accordionSelector.accordion( "destroy" );
+		}
 
-		$(window).resize(function() {
-			    if(windowSize < 586){
-			    	accordionSelector.accordion({
+		$(window).resize(function(){
+			if(windowSize < 586){
+				accordionSelector.accordion({
 					collapsible: true,
 					heightStyle: "content"
 				});
-			    } else {
-			    	accordionSelector.accordion( "destroy" );
-			    }
-			})
-		</script>
-	
-		<!-- ingredients popup KM -->
-		<script>
-			$('#ingredients_open, #ingredients_close').click(function() {
-				$('#ingredients_content').toggleClass('show')
-			})
-		</script>
+			} else {
+				accordionSelector.accordion( "destroy" );
+			}
+		});
+
+		// ingredients popup KM
+		$('#ingredients_open, #ingredients_close').click(function() {
+			$('#ingredients_content').toggleClass('show');
+		});
+	})(jQuery);
+</script>
 
 
 

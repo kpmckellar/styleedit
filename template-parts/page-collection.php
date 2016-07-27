@@ -21,7 +21,7 @@
 								
 			<div id="logo">
 				<h1>
-					<a href="<?php echo esc_url( home_url( '/' ) ); ?>">Style Edit</a>
+					<a href="<?php echo esc_url( home_url( '/' ) ); ?>"><?php bloginfo('name'); ?></a>
 				</h1>
 			</div>
 
@@ -62,7 +62,7 @@
 									</div>
 								</div>
 								<div class="enter">
-									<a href="<?php the_permalink(); ?>">more colors</a>
+									<a href="<?php the_permalink(); ?>"><?php echo __('more colors','styleedit'); ?></a>
 								</div>
 							</div>							
 

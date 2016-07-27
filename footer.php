@@ -1,27 +1,16 @@
-<?php
-/**
- * The template for displaying the footer.
- *
- * Contains the closing of the #content div and all content after.
- *
- * @link https://developer.wordpress.org/themes/basics/template-files/#template-partials
- *
- * @package styleedit
- */
-
-?>
-
 	</div> <!-- .site-content -->
 
 	<footer id="colophon" class="site-footer" role="contentinfo">
 		<div class="site-info">
 
-			<div class="social">
-			<!-- <?php wp_nav_menu( array( 'menu' => 'social', 'theme_location' => 'primary', 'menu_id' => 'primary-menu' ) ); ?> -->
+			<div class="social">			
 			
-			<?php $settings = get_option('custom_options'); ?>
+				<?php $settings = get_option('custom_options'); ?>
 
-				<a class="social_icon" href="<?php echo $settings['custom_twitter_url']; ?>"><img  src="<?php bloginfo('template_directory'); ?>/img/twitter.png" /></a><a class="social_icon" href="<?php echo $settings['custom_instagram_url']; ?>"><img  src="<?php bloginfo('template_directory'); ?>/img/instagram.png" /></a><a class="social_icon" href="<?php echo $settings['custom_facebook_url']; ?>"><img  src="<?php bloginfo('template_directory'); ?>/img/facebook.png" /></a><a class="social_icon" href="<?php echo $settings['custom_youtube_url']; ?>"><img  src="<?php bloginfo('template_directory'); ?>/img/youtube.png" /></a>
+				<a class="social_icon" href="<?php echo $settings['custom_twitter_url']; ?>"><img  src="<?php bloginfo('template_directory'); ?>/img/twitter.png" /></a>
+				<a class="social_icon" href="<?php echo $settings['custom_instagram_url']; ?>"><img  src="<?php bloginfo('template_directory'); ?>/img/instagram.png" /></a>
+				<a class="social_icon" href="<?php echo $settings['custom_facebook_url']; ?>"><img  src="<?php bloginfo('template_directory'); ?>/img/facebook.png" /></a>
+				<a class="social_icon" href="<?php echo $settings['custom_youtube_url']; ?>"><img  src="<?php bloginfo('template_directory'); ?>/img/youtube.png" /></a>
 			</div>
 
 			<div class="">

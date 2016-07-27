@@ -50,7 +50,7 @@
 
 				<div id="logo">
 					<h1>
-						<a href="<?php echo esc_url( home_url( '/' ) ); ?>">Style Edit</a>
+						<a href="<?php echo esc_url( home_url( '/' ) ); ?>"><?php bloginfo('name'); ?></a>
 					</h1>
 				</div>
 
