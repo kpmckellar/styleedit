@@ -362,15 +362,15 @@
 	}
 
 	#ingredients_content {
-		position: absolute;
-		width: 330px;
+		position: fixed;
+		width: 400px;
 		background-color: rgba(26, 26, 26, 0.96);
 		color: #fff;
 		font-size: 13px;
 		padding: 50px;
 		z-index: 1;
 		left: 50%;
-		margin-left: -165px;
+		margin-left: -200px;
 		margin-top: -100px;
 		display: none;
 	}
