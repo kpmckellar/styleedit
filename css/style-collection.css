@@ -209,5 +209,8 @@
 @media only screen and (min-width: 1025px) {
 	#collection .group {
 		max-width: 960px;		
-	}	
+	}
+	#collection .group li .rollover {
+		visibility: hidden;
+	}
 }
