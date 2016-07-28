@@ -6,7 +6,7 @@
 <link rel="profile" href="http://gmpg.org/xfn/11">
 <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
 <!-- Fonts.com fonts incluide -->
-<link type="text/css" rel="stylesheet" href="//fast.fonts.net/cssapi/f57bee99-b897-470d-99d0-b25cbf760386.css"/>
+<link type="text/css" rel="stylesheet" href="//fast.fonts.net/cssapi/f57bee99-b897-470d-99d0-b25cbf760386.css" />
 <?php wp_head(); ?>
 </head>
 <body <?php body_class(); ?>>
