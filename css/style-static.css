@@ -231,6 +231,7 @@
 }
 #wpsl-wrap.wpsl-store-below #wpsl-result-list ul {
 	font-size: 0;
+	padding: 0 20px;
 }
 #wpsl-wrap.wpsl-store-below #wpsl-result-list li {
 	padding: 0 16px;
@@ -383,6 +384,9 @@
 	#static.find-a-salon #locator .wpsl-search .wpsl-select-wrap, 
 	#static.find-a-salon #locator .wpsl-search .wpsl-search-btn-wrap {
 		vertical-align: bottom;
+	}
+	#wpsl-wrap.wpsl-store-below #wpsl-result-list li {
+		width: 50%;
 	}
 	/* Plugin Styles - END */
 }
