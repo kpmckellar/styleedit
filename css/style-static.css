@@ -229,6 +229,9 @@
 #static.find-a-salon #locator .wpsl-store-below #wpsl-result-list #wpsl-stores {
 	height: auto !important;
 }
+#wpsl-wrap.wpsl-store-below #wpsl-result-list ul {
+	font-size: 0;
+}
 #wpsl-wrap.wpsl-store-below #wpsl-result-list li {
 	padding: 0 16px;
 	width: 33.33%;
@@ -237,6 +240,7 @@
 	font-size: 20px;
 	line-height: 24px;
 	width: 100%;
+	display: inline-block;
 }
 #wpsl-wrap.wpsl-store-below #wpsl-result-list li strong {
 	font-weight: 700;
