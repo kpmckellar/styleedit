@@ -31,6 +31,11 @@
 	$dual_feature = wp_get_attachment_image_src( get_post_meta($id, 'products_dual_feature', true), 'full' );
 	$dual_featureSrc = $dual_feature[0];
 
+	$class = '';
+	if($category == 'invisible dry shampoo'){
+		$class = ' mod';
+	}
+
 ?>
 
 <section class="product">
@@ -44,7 +49,7 @@
 				<div class="productShot">
 					<img src="<?php echo $featured_imgSrc; ?>"/>
 					<h1 class="title"><?php echo $category; ?></h1>
-					<h2 class="subTitle"><?php the_title(); ?></h2>
+					<h2 class="subTitle<?php echo $class; ?>"><?php the_title(); ?></h2>
 					<h3 class="description"><?php echo $description; ?></h3>
 				</div>
 			</div>
@@ -78,7 +83,7 @@
 			</div>
 		</div>
 	<?php } ?>
-	<div class="container clearfix">
+	<div class="container clearfix<?php echo $class; ?>">
 		
 		<?php if ($before_imgSrc) { ?>
 			<div class="beforeafter">

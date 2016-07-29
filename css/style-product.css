@@ -17,9 +17,18 @@
 	padding-left: 40px;
 	padding-right: 40px;
 }
+.product > .container {
+	margin-bottom: 60px;
+}
+.product > .container.mod {
+	margin-bottom: 10px;
+}
+.product #shades .container {
+	max-width: 100%;
+}
 .product #feature {
 	position: relative;
-	margin-bottom: 40px;
+	margin-bottom: 60px;
 }
 .product #logo h1 {
 	margin: 0;
@@ -50,35 +59,58 @@
 .product #feature .productShot img {
 	display: block;
 	margin: 0 auto;
+	max-width: 134%;
+	-webkit-transform: translateX(-14%);
+	-ms-transform: translateX(-14%);
+	transform: translateX(-14%);
 }
 .product #feature .productShot .title {
+	font-family: 'ITC Lubalin Graph W01 Bd CnObl';
 	font-size: 29px;
-	line-height: 27px;
+	line-height: normal;
+	font-weight: normal;
 	letter-spacing: 0.03em;
 	margin: 0;
+	margin-top: -10%;
+	position: relative;
+	z-index: 2;
 }
 .product #feature .productShot .subTitle {
+	font-family: 'DIN Next W01 Regular', 'Helvetica Neue Thin', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 	font-size: 16px;
-	line-height: 27px;
+	line-height: normal;
 	letter-spacing: 0.05em;
+	font-weight: normal;
 	text-transform: uppercase;
 	margin: 0;
+	padding: 5px 0;
+	position: relative;
+	z-index: 2;
+}
+.product #feature .productShot .subTitle.mod {
+	max-width: 240px;
+	margin: 0 auto;
 }
 .product #feature .productShot .description {
 	font-size: 16px;
-	line-height: 27px;
+	line-height: normal;
+	font-weight: normal;
 	margin: 0;
+	position: relative;
+	z-index: 2;
 }
 .product #shades {
 	position: relative;
 	padding: 40px 0;
-	margin-bottom: 50px;
+	margin-bottom: 60px;
 	background-color: #faf9f9;
 }
 .product #shades .title {
+	font-family: 'DIN Next W01 Regular', 'Helvetica Neue Thin', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 	font-size: 15px;
 	line-height: 18px;
 	letter-spacing: 0.05em;
+	font-weight: normal;
 	text-transform: uppercase;
 	text-align: center;
 	margin: 0 0 20px;
@@ -199,6 +231,7 @@
 .prod_img_before img,
 .prod_img_after img {
 	width: 100%;
+	display: block;
 }
 
 .whatItDoes {
@@ -225,7 +258,7 @@
 
 #accordion {
 	text-transform: lowercase;
-	margin-bottom: 50px;
+	margin-bottom: 0px;
 }
 
 #accordion h3 {
@@ -252,6 +285,7 @@
 	text-transform: uppercase;
 	text-decoration: none;
 	font-size: 20px;
+	margin-top: 50px;
 }
 
 .btn_salon:hover,
@@ -314,14 +348,14 @@
 		visibility: visible;
 	}
 	.product #shades ul {
-		padding: 0;
+		padding: 0 5%;
 		text-align: center;
 	}
 	.product #shades ul li {
 		display: inline-block;
 		vertical-align: top;
 		margin: 0 30px;
-		max-width: 160px;
+		max-width: 210px;
 		padding-bottom: 5px;
 	}
 
@@ -335,8 +369,7 @@
 		margin: 0 auto 50px auto;
 		height: 35px;
 		line-height: 35px;
-		font-size: 15px;
-
+		font-size: 15px;		
 	}
 
 	#wrapper_ingredients {
@@ -346,7 +379,7 @@
   		flex-direction: row;
   		-webkit-align-items: center; /* Safari */
 		align-items: center;
-		margin-top: 25px;
+		margin-top: 0px;
 	}
 
 	h3#ingredients_header {
@@ -415,6 +448,9 @@
 		background-image: url(../img/logo-desktop.png);
 		visibility: visible;
 	}
+	.product #shades ul {
+		padding: 0;
+	}
 	.product #shades ul li {
 		margin: 0 35px;
 	}
@@ -426,7 +462,7 @@
 
 	#details {
 		padding: 0;
-		margin-bottom: 80px;
+		margin-bottom: 0px;
 
 		-webkit-columns: 150px 2;
 		-moz-columns: 150px 2;
@@ -473,7 +509,7 @@
 	}
 
 	#accordion div {
-		padding-bottom: 25px;
+		padding-bottom: 50px;
 		-webkit-column-break-inside: avoid;
 		page-break-inside: avoid;
 		break-inside: avoid;

@@ -252,7 +252,7 @@
 #wpsl-wrap.wpsl-store-below #wpsl-result-list li .wpsl-directions {
 	display: inline-block;
 	margin-left: 13px;
-	color: #ef229c;
+	color: #000;
 	text-transform: lowercase;
 }
 /* Plugin Styles - END */
@@ -590,7 +590,7 @@
 	#wpsl-wrap.wpsl-store-below #wpsl-result-list li .wpsl-directions {
 		display: inline-block;
 		margin-left: 13px;
-		color: #ef229c;
+		color: #000;
 		text-transform: lowercase;
 	}
 	/* Plugin Styles - END */
