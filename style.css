@@ -278,7 +278,6 @@ towards complexity
 }
 
 
-
 /*--------------------------------------------------------------
 # Footer
 --------------------------------------------------------------*/
@@ -311,6 +310,25 @@ towards complexity
 	color: #807f7f;
 	font-family:'Helvetica LT W01 Roman', 'Helvetica Neue Thin', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
+
+@media only screen and (min-width: 768px) {
+	.twitter {
+		width: 22px;
+	}
+
+	.instagram {
+		width: 18px
+	}
+
+	.facebook {
+		width: 10px;
+	}
+
+	.youtube {
+		width: 25px;
+	}
+}
+
 
 
 /*--------------------------------------------------------------
