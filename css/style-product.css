@@ -373,7 +373,7 @@
   		flex-direction: row;
   		-webkit-align-items: center; /* Safari */
 		align-items: center;
-		margin-top: 0px;
+		margin-top: 25px;
 	}
 
 	h3#ingredients_header {
@@ -509,10 +509,14 @@
 	}
 
 	#accordion div {
-		padding-bottom: 50px;
+		padding-bottom: 25px;
 		-webkit-column-break-inside: avoid;
 		page-break-inside: avoid;
 		break-inside: avoid;
+	}
+
+	#wrapper_ingredients {
+		margin-top: 0;
 	}
 
 	#ingredients_content {
