@@ -59,10 +59,6 @@
 .product #feature .productShot img {
 	display: block;
 	margin: 0 auto;
-	max-width: 134%;
-	-webkit-transform: translateX(-14%);
-	-ms-transform: translateX(-14%);
-	transform: translateX(-14%);
 }
 .product #feature .productShot .title {
 	font-family: 'ITC Lubalin Graph W01 Bd CnObl';
@@ -447,6 +443,12 @@
 		height: 134px;
 		background-image: url(../img/logo-desktop.png);
 		visibility: visible;
+	}
+	.product #feature .productShot img {
+		max-width: 134%;
+		-webkit-transform: translateX(-14%);
+		-ms-transform: translateX(-14%);
+		transform: translateX(-14%);
 	}
 	.product #shades ul {
 		padding: 0;
