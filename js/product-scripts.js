@@ -21,7 +21,15 @@
 				items:1,
 			    margin:0,
 			    loop:true,
-			    nav:true
+			    nav:true,
+			    responsive: {
+			    	0: {
+			    		items: 1
+			    	},
+			    	490: {
+			    		items: 2
+			    	}
+			    }
 			},
 			slider = $('#shades ul');
 
@@ -30,7 +38,7 @@
 		swap(width, slider);
 
 		function swap(width, slider){				
-			if(width >= 768){
+			if(width > 768){
 				slider.trigger('destroy.owl.carousel');
 			} else {
 				slider.trigger('refresh.owl.carousel');

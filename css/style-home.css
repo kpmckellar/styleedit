@@ -83,7 +83,12 @@ html,
 		height: 134px;
 		margin-top: -67px;
 		background-image: url(../img/logo-desktop.png);
-		background-size: inherit;
+		background-size: inherit;		
+	}
+}
+@media only screen and (max-width: 767px) {
+	#homeSlider #logo a {
+		display: none;
 	}
 }
 @media only screen and (min-width: 768px) {
