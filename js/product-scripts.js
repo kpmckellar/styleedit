@@ -52,6 +52,7 @@
 
 	accordionSelector.accordion({
 		collapsible: true,
+		active : 'none',
 		heightStyle: "content"
 	});
 
@@ -63,6 +64,7 @@
 		if(windowSize < 586){
 			accordionSelector.accordion({
 				collapsible: true,
+				active : 'none',
 				heightStyle: "content"
 			});
 		} else {
