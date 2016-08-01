@@ -13,6 +13,7 @@
 	$alt_imgSrc = $alt_img[0];
 
 	$category = get_post_meta($id, 'products_category', true);
+	$title = get_the_title();
 	$description = get_post_meta($id, 'products_description', true);
 
 	$shades = get_post_meta($id, 'products_shades', true);
@@ -38,6 +39,10 @@
 	$class = '';
 	if($category == 'invisible dry shampoo'){
 		$class = ' mod';
+	}
+
+	if($title == 'ROOT CONCEALER FOR BLONDES'){
+		$class = ' mod2';
 	}
 
 ?>
@@ -91,7 +96,7 @@
 			</div>
 		</div>
 	<?php } ?>
-	<div class="infoSection container clearfix">
+	<div class="container clearfix<?php echo $class; ?>">
 		
 		<?php if ($before_imgSrc) { ?>
 			<div class="beforeafter">
