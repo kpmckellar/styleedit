@@ -7,10 +7,10 @@
 			
 				<?php $settings = get_option('custom_options'); ?>
 
-				<a class="social_icon" href="<?php echo $settings['custom_twitter_url']; ?>"><img class="twitter" src="<?php bloginfo('template_directory'); ?>/img/twitter.png" /></a>
-				<a class="social_icon" href="<?php echo $settings['custom_instagram_url']; ?>"><img class="instagram"  src="<?php bloginfo('template_directory'); ?>/img/instagram.png" /></a>
-				<a class="social_icon" href="<?php echo $settings['custom_facebook_url']; ?>"><img class="facebook"  src="<?php bloginfo('template_directory'); ?>/img/facebook.png" /></a>
-				<a class="social_icon" href="<?php echo $settings['custom_youtube_url']; ?>"><img class="youtube"  src="<?php bloginfo('template_directory'); ?>/img/youtube.png" /></a>
+				<a class="social_icon" target="_blank" href="<?php echo $settings['custom_twitter_url']; ?>"><img class="twitter" src="<?php bloginfo('template_directory'); ?>/img/twitter.png" /></a>
+				<a class="social_icon" target="_blank" href="<?php echo $settings['custom_instagram_url']; ?>"><img class="instagram"  src="<?php bloginfo('template_directory'); ?>/img/instagram.png" /></a>
+				<a class="social_icon" target="_blank" href="<?php echo $settings['custom_facebook_url']; ?>"><img class="facebook"  src="<?php bloginfo('template_directory'); ?>/img/facebook.png" /></a>
+				<a class="social_icon" target="_blank" href="<?php echo $settings['custom_youtube_url']; ?>"><img class="youtube"  src="<?php bloginfo('template_directory'); ?>/img/youtube.png" /></a>
 			</div>
 
 			<div class="">
