@@ -41,7 +41,7 @@
 		$class = ' mod';
 	}
 
-	if($title == 'ROOT CONCEALER FOR BLONDES'){
+	if($title == 'root concealer for blondes'){
 		$class = ' mod2';
 	}
 
