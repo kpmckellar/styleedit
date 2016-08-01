@@ -40,6 +40,12 @@ function post_products() {
 				    'type'  => 'image'
 				),
 				array(
+				    'label' => 'Alternate Image',
+				    'desc'  => 'An alternate product shot, displayed on the single product page.',
+				    'id'    => $prefix.'alt_img',			
+				    'type'  => 'image'
+				),
+				array(
 				    'label' => 'Product Category',
 				    'desc'  => 'Text appearing above the product title.',
 				    'id'    => $prefix.'category',			

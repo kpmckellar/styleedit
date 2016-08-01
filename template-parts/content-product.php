@@ -8,6 +8,10 @@
 	$header_imgSrc = $header_img[0];
 	$featured_img = wp_get_attachment_image_src( get_post_thumbnail_id($id), 'full' );
 	$featured_imgSrc = $featured_img[0];
+
+	$alt_img = wp_get_attachment_image_src( get_post_meta($id, 'products_alt_img', true), 'full' );
+	$alt_imgSrc = $alt_img[0];
+
 	$category = get_post_meta($id, 'products_category', true);
 	$description = get_post_meta($id, 'products_description', true);
 
@@ -47,7 +51,11 @@
 					<img src="<?php echo $header_imgSrc; ?>"/>
 				</div>
 				<div class="productShot">
-					<img src="<?php echo $featured_imgSrc; ?>"/>
+					<?php if($alt_imgSrc){ ?>
+						<img src="<?php echo $alt_imgSrc; ?>"/>
+					<?php } else { ?>
+						<img src="<?php echo $featured_imgSrc; ?>"/>
+					<?php } ?>
 					<h1 class="title"><?php echo $category; ?></h1>
 					<h2 class="subTitle<?php echo $class; ?>"><?php the_title(); ?></h2>
 					<h3 class="description"><?php echo $description; ?></h3>
