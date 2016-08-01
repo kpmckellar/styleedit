@@ -60,7 +60,7 @@
 									</div>
 								</div>
 								<div class="enter">
-									<a href="<?php the_permalink(); ?>"><?php echo __('more colors','styleedit'); ?></a>
+									<a href="<?php the_permalink(); ?>"><?php echo __('more info','styleedit'); ?></a>
 								</div>
 							</div>							
 
