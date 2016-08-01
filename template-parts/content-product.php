@@ -91,7 +91,7 @@
 			</div>
 		</div>
 	<?php } ?>
-	<div class="container clearfix<?php echo $class; ?>">
+	<div class="infoSection container clearfix">
 		
 		<?php if ($before_imgSrc) { ?>
 			<div class="beforeafter">

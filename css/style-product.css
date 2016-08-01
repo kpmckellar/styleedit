@@ -23,6 +23,9 @@
 .product > .container.mod {
 	margin-bottom: 10px;
 }
+.product > .container.infoSection {
+	margin-bottom: 35px;
+}
 .product #shades .container {
 	max-width: 100%;
 }
@@ -500,10 +503,6 @@
 
 	.prod_img_before {
 		margin-bottom: 32px;
-	}
-
-	#video {
-		margin-bottom: 80px;
 	}
 
 	#details .whatItDoes h3,
