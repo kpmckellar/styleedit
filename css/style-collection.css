@@ -94,6 +94,7 @@
 	margin: 0;
 }
 #collection .group li .rollover .title {
+	font-family:'ITC Lubalin Graph W01 Bd CnObl';
 	font-size: 23px;	
 	letter-spacing: 0.05em;	
 	text-transform: lowercase;	
@@ -104,6 +105,7 @@
 	color: #000;	
 }
 #collection .group li .rollover .subTitle {
+	font-family:'DIN Next W01 Regular', 'Helvetica Neue Thin', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 	font-size: 11px;
 	letter-spacing: 0.06em;
 	text-transform: uppercase;
