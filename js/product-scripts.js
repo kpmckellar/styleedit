@@ -53,7 +53,8 @@
 	accordionSelector.accordion({
 		collapsible: true,
 		active : 'none',
-		heightStyle: "content"
+		heightStyle: 'content',
+		header: 'h3'
 	});
 
 	if (windowSize > 586) {
@@ -73,7 +74,9 @@
 	});
 
 	// ingredients popup KM
-	$('#ingredients_open, #ingredients_close').click(function() {
-		$('#ingredients_content').toggleClass('show');
-	});
+	if(windowSize > 586){
+		$('#ingredients_header, #ingredients_close').click(function() {
+			$('#ingredients_content').toggleClass('show');
+		});
+	}
 })(jQuery);

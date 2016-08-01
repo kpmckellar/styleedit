@@ -103,29 +103,34 @@
 			</div>
 			
 			<div id="accordion">
-				
-					<h3><?php echo __('what’s in it','styleedit'); ?></h3>
+					
 					<div>
-						<p><?php echo $whats_in_it; ?></p>
+						<h3><?php echo __('what’s in it','styleedit'); ?></h3>
+						<div>
+							<p><?php echo $whats_in_it; ?></p>
+						</div>
 					</div>
 					
-					<h3><?php echo __('what’s NOT in it','styleedit'); ?></h3>
 					<div>
-						<p><?php echo $whats_not_in_it; ?></p>
+						<h3><?php echo __('what’s NOT in it','styleedit'); ?></h3>
+						<div>
+							<p><?php echo $whats_not_in_it; ?></p>
+						</div>
 					</div>
 
-					<h3><?php echo __('directions','styleedit'); ?></h3>
 					<div>
-						<p><?php echo $directions; ?></p>
+						<h3><?php echo __('directions','styleedit'); ?></h3>
+						<div>
+							<p><?php echo $directions; ?></p>
+						</div>
 					</div>
 
 				<div id="wrapper_ingredients">
-					<h3 id="ingredients_header"><?php echo __('ingredients','styleedit'); ?></h3>
-					<img src="<?php bloginfo('template_directory'); ?>/img/ingredients_open.png" id="ingredients_open" />
-				</div>
-				<div id="ingredients_content">
-					<img src="<?php bloginfo('template_directory'); ?>/img/ingredients_close.png" id="ingredients_close" />
-					<p><?php echo $ingredients; ?></p>
+					<h3 id="ingredients_header"><?php echo __('ingredients','styleedit'); ?></h3>				
+					<div id="ingredients_content">
+						<img src="<?php bloginfo('template_directory'); ?>/img/ingredients_close.png" id="ingredients_close" />
+						<p><?php echo $ingredients; ?></p>
+					</div>
 				</div>
 
 			</div>

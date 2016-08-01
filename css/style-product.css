@@ -376,11 +376,18 @@
 		margin-top: 25px;
 	}
 
-	h3#ingredients_header {
+	#details #accordion h3#ingredients_header {
 		display: inline-block;
 		margin: 0;
 		padding: 0;
 		text-transform: uppercase;
+		background-image: url(../img/ingredients_open.png);
+		background-repeat: no-repeat;
+		background-position: right center;
+		padding-right: 35px;
+		padding-top: 10px;
+		padding-bottom: 5px;
+		cursor: pointer;
 	}
 
 	#ingredients_open {
@@ -508,7 +515,7 @@
 		break-inside: avoid;
 	}
 
-	#accordion div {
+	#accordion > div {
 		padding-bottom: 25px;
 		-webkit-column-break-inside: avoid;
 		page-break-inside: avoid;
@@ -519,9 +526,11 @@
 		margin-top: 0;
 	}
 
-	#ingredients_content {
+	#accordion #ingredients_content {
 		top: 50%;
 		margin-top: 0;
+		transform: translatey(-50%);
+		padding-bottom: 50px;
 	}
 
 	.btn_salon {
