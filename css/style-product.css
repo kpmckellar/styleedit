@@ -444,9 +444,9 @@
 	}
 	.product #feature .productShot img {
 		max-width: 134%;
-		-webkit-transform: translateX(-14%);
-		-ms-transform: translateX(-14%);
-		transform: translateX(-14%);
+		-webkit-transform: translateX(-10%);
+		-ms-transform: translateX(-10%);
+		transform: translateX(-10%);
 	}
 	.product #shades ul {
 		padding: 0;
