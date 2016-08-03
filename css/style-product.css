@@ -332,9 +332,16 @@
 		width: 50%;
 		display: inline-block;
 	}
+	.product #feature .productShot img {
+		display: block;
+	    margin: -18% auto 0;
+	    max-width: 140%;
+	    transform: translateX(-15%);
+	}
 	.product #feature .productShot {
 		width: 50%;
-		padding: 0 40px;
+		padding: 0 24px;
+		overflow: hidden;
 	}
 	.product #logo a {
 		top: 75%;
