@@ -37,9 +37,14 @@
 		   customParam1:'', //any custom parameter. example: Airport: 'JFK'
 		   customParam2:'', //any custom parameter. example: Rooms: '3'
 		   customParamN:'' })
+
+
+		
+		ga('send', 'event', 'Shop Now Button', 'Click');
+		
 		})
 
-	$('#locate').click(function() {
+	$('#wpsl-search-btn').click(function() {
 		kenshoo.trackConversion('113','f15b3992-46df-44e1-a2f9-a3191e71b7bc',{
 		   //OPTIONAL PARAMETERS. FILL VALUES OR REMOVE UNNEEDED PARAMETERS
 		   conversionType: 'locate', //specific conversion type. example: type:'AppInstall' default is 'conv'
@@ -50,6 +55,8 @@
 		   customParam1:'', //any custom parameter. example: Airport: 'JFK'
 		   customParam2:'', //any custom parameter. example: Rooms: '3'
 		   customParamN:'' })
+
+		ga('send', 'event', 'Store Locator Button', 'Click');
 	})
 </script>
 

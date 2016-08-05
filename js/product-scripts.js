@@ -79,4 +79,28 @@
 			$('#ingredients_content').toggleClass('show');
 		});
 	}
+
+
+
+
+
+
+	// On load find width of browser. Initialize accordion if under 586, don't initialize if greater
+	// var accordionSelector = $("#accordion"),
+	// 	windowSize = $(window).width();
+
+	// if (windowSize < 586) {
+	// 		accordionSelector.accordion({
+	// 		collapsible: true,
+	// 		active : 'none',
+	// 		heightStyle: 'content',
+	// 		header: 'h3'
+	// 	});
+	// }
+
+	// // monitor browser resize
+	// $(window).resize(function(){
+
+	// }
+
 })(jQuery);
